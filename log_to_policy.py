@@ -121,6 +121,11 @@ def match_policies_to_logs(csv_file, json_file, output_file=None, debug=False):
         print(f"Loaded {len(policies)} policies")
         print(f"Processing {len(df)} log entries")
 
+    # Cache to avoid duplicate policy matching computations
+    policy_match_cache = {}
+    cache_hits = 0
+    cache_misses = 0
+
     matches = []
     for idx, row in df.iterrows():
         src = row["Source address"]
@@ -128,34 +133,59 @@ def match_policies_to_logs(csv_file, json_file, output_file=None, debug=False):
         proto = row["IP Protocol"]
         dport = row["Destination Port"]
 
-        if debug and idx < 3:  # Debug first few entries
-            print(f"\n--- Log entry {idx+1} ---")
-            print(f"Source: {src}, Dest: {dst}, Protocol: {proto}, Port: {dport}")
-
-        matching_policies = []
-        policy_check_count = 0
+        # Create cache key from log entry data
+        cache_key = (src, dst, proto, dport)
         
-        for policy in policies:
-            policy_check_count += 1
-            src_match = ip_in_list(src, policy["source"])
-            dst_match = ip_in_list(dst, policy["destination"])
-            svc_match = service_matches(proto, dport, policy["service"])
+        # Check if we've already computed matches for this combination
+        if cache_key in policy_match_cache:
+            matching_policies = policy_match_cache[cache_key]
+            cache_hits += 1
             
-            if debug and idx < 3 and policy_check_count <= 5:  # Debug first few policies for first few entries
-                print(f"  Policy '{policy['name']}': src={src_match}, dst={dst_match}, svc={svc_match}")
-                print(f"    Source IPs: {policy['source'][:3]}{'...' if len(policy['source']) > 3 else ''}")
-                print(f"    Dest IPs: {policy['destination'][:3]}{'...' if len(policy['destination']) > 3 else ''}")
-                print(f"    Services: {policy['service']}")
+            if debug and idx < 3:
+                print(f"\n--- Log entry {idx+1} (CACHE HIT) ---")
+                print(f"Source: {src}, Dest: {dst}, Protocol: {proto}, Port: {dport}")
+                print(f"Cached result: {', '.join(matching_policies) if matching_policies else 'NO MATCH'}")
+        else:
+            # Compute policy matches for new combination
+            cache_misses += 1
             
-            if src_match and dst_match and svc_match:
-                matching_policies.append(policy["name"])
-                if debug and idx < 3:
-                    print(f"  *** MATCH: {policy['name']} ***")
+            if debug and idx < 3:  # Debug first few entries
+                print(f"\n--- Log entry {idx+1} (COMPUTING) ---")
+                print(f"Source: {src}, Dest: {dst}, Protocol: {proto}, Port: {dport}")
+
+            matching_policies = []
+            policy_check_count = 0
+            
+            for policy in policies:
+                policy_check_count += 1
+                src_match = ip_in_list(src, policy["source"])
+                dst_match = ip_in_list(dst, policy["destination"])
+                svc_match = service_matches(proto, dport, policy["service"])
+                
+                if debug and idx < 3 and policy_check_count <= 5:  # Debug first few policies for first few entries
+                    print(f"  Policy '{policy['name']}': src={src_match}, dst={dst_match}, svc={svc_match}")
+                    print(f"    Source IPs: {policy['source'][:3]}{'...' if len(policy['source']) > 3 else ''}")
+                    print(f"    Dest IPs: {policy['destination'][:3]}{'...' if len(policy['destination']) > 3 else ''}")
+                    print(f"    Services: {policy['service']}")
+                
+                if src_match and dst_match and svc_match:
+                    matching_policies.append(policy["name"])
+                    if debug and idx < 3:
+                        print(f"  *** MATCH: {policy['name']} ***")
+            
+            # Store result in cache
+            policy_match_cache[cache_key] = matching_policies
 
         matches.append(", ".join(matching_policies) if matching_policies else "NO MATCH")
         
         if debug and idx < 3:
             print(f"Final result: {matches[-1]}")
+
+    if debug:
+        print(f"\nCache statistics:")
+        print(f"  Cache hits: {cache_hits}")
+        print(f"  Cache misses: {cache_misses}")
+        print(f"  Cache efficiency: {cache_hits/(cache_hits+cache_misses)*100:.1f}%")
 
     df["Matched Policies"] = matches
 

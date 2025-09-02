@@ -19,3 +19,6 @@ Thumbs.db
 # Temporary files
 *.tmp
 *.temp
+
+# Output files
+optimized_output.csv
