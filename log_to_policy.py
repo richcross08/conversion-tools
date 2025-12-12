@@ -197,7 +197,7 @@ def match_policies_to_logs(csv_file, json_file, output_file=None, debug=False):
 
 # Example usage
 if __name__ == "__main__":
-    log_file = "logs/log.csv"
+    log_file = "logs/log-1.csv"
     policy_file = "policy/tmc-policies.json"   # save your JSON here
     output = "log_with_policies.csv"
 
