@@ -1,0 +1,108 @@
+Category,IronPort Action
+Computers and Internet,scan
+Job Search,scan
+Shopping,scan
+Adult,block
+Education,scan
+Sports and Recreation,scan
+Society and Culture,scan
+Government and Law,scan
+Science and Technology,scan
+Arts,scan
+Social Science,scan
+Finance,scan
+Hate Speech,block
+Reference,scan
+Infrastructure and Content Delivery Networks,scan
+Business and Industry,scan
+Search Engines and Portals,scan
+Illegal Activities,block
+Online Communities,scan
+Filter Avoidance,block
+Advertisements,scan
+Online Trading,scan
+Lingerie and Swimsuits,block
+Lotteries,block
+Weapons,block
+Web Hosting,scan
+Web-based Email,block
+Chat and Instant Messaging,block
+Games,block
+Transportation,scan
+Real Estate,scan
+Travel,scan
+Illegal Drugs,block
+Gambling,block
+Hacking,block
+Cheating and Plagiarism,block
+Sex Education,scan
+Software Updates,scan
+Pornography,block
+Dating,block
+Peer File Transfer,block
+Safe for Kids,scan
+News,scan
+Non-sexual Nudity,block
+Dining and Drinking,scan
+Web Page Translation,scan
+Child Abuse Content,block
+Computer Security,scan
+Online Storage and Backup,block
+Internet Telephony,block
+Freeware and Shareware,scan
+Social Networking,block
+Mobile Phones,scan
+File Transfer Services,continue
+Streaming Video,scan
+Streaming Audio,scan
+Astrology,scan
+Extreme,block
+Fashion,scan
+Alcohol,scan
+Tobacco,scan
+Humor,scan
+SaaS and B2B,scan
+Personal Sites,scan
+Digital Postcards,block
+Politics,scan
+Illegal Downloads,block
+Organizational Email,block
+Religion,scan
+Non-governmental Organizations,scan
+Auctions,scan
+Professional Networking,block
+Photo Search and Images,scan
+Dynamic and Residential,continue
+Parked Domains,scan
+Entertainment,scan
+DIY Projects,scan
+Hunting,scan
+Military,scan
+Online Meetings,scan
+Paranormal,scan
+Personal VPN,block
+Not Actionable,scan
+Health and Medicine,scan
+Recipes and Food,scan
+Nature and Conservation,scan
+Animals and Pets,scan
+Web Cache and Archives,scan
+Cannabis,scan
+"Conventions, Conferences and Trade Shows",scan
+Cryptocurrency,scan
+Cryptomining,scan
+Encrypted DNS,block
+Dynamic DNS Provider,scan
+Online Document Sharing and Collaboration,scan
+Internet of Things,scan
+Museums,scan
+Cloud and Data Centers,scan
+Terrorism and Violent Extremism,block
+URL Shorteners,scan
+Private IP Addresses as Host,scan
+DNS-Tunneling,block
+Regional Restricted Sites (Great Britain),scan
+Regional Restricted Sites (Italy),scan
+Regional Restricted Sites (Germany),scan
+Regional Restricted Sites (Poland),scan
+Generative AI,block
