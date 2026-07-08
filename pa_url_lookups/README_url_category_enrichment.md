@@ -72,7 +72,7 @@ This is best when you already have a valid API key.
 export PANOS_API_KEY="YOUR_API_KEY"
 
 python3 pan_url_category_enrich_xlsx_keygen.py \
-  --firewall 100.50.81.108:4443 \
+  --firewall <firewall-ip>:<port> \
   --proxy-csv "Proxy_top5000_2026_04.csv" \
   --ironport-actions-csv "ironport-category-actions.csv" \
   --palo-actions-json "palo-category-actions.json" \
@@ -94,7 +94,7 @@ This is the safest username/password option because the password is not saved in
 
 ```bash
 python3 pan_url_category_enrich_xlsx_keygen.py \
-  --firewall 100.50.81.108:4443 \
+  --firewall <firewall-ip>:<port> \
   --username wei-admin \
   --prompt-password \
   --proxy-csv "Proxy_top5000_2026_04.csv" \
@@ -116,7 +116,7 @@ This is useful for repeatable runs without placing the password directly in the 
 export PANOS_PASSWORD="YOUR_PASSWORD"
 
 python3 pan_url_category_enrich_xlsx_keygen.py \
-  --firewall 100.50.81.108:4443 \
+  --firewall <firewall-ip>:<port> \
   --username wei-admin \
   --password-env PANOS_PASSWORD \
   --proxy-csv "Proxy_top5000_2026_04.csv" \
@@ -140,7 +140,7 @@ Use this when you want one row per URL that is not already in cache. If the URL 
 
 ```bash
 python3 pan_url_category_enrich_xlsx_keygen.py \
-  --firewall 100.50.81.108:4443 \
+  --firewall <firewall-ip>:<port> \
   --username wei-admin \
   --prompt-password \
   --proxy-csv "Proxy_top5000_2026_04.csv" \
