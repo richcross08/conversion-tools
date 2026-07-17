@@ -1,0 +1,2979 @@
+{
+  "parser_version": "2.0.0",
+  "source": "/Users/richardcross/Documents/Scripts/conversion-tools/gp_log_reader/GlobalProtectLogs_richardcross_07162026205854.tgz",
+  "generated_at": "2026-07-17 09:05:28.251",
+  "attempt_count": 10,
+  "summary": {
+    "status_counts": {
+      "connected": 8,
+      "incomplete": 2
+    },
+    "connected_after_retry_count": 2,
+    "successful_machine_certificate_count": 1,
+    "successful_user_certificate_count": 4,
+    "certificate_selection_failure_count": 1,
+    "certificate_selection_recovered_count": 1
+  },
+  "attempts": [
+    {
+      "attempt_id": 21,
+      "start_time": "2026-07-15 20:06:47.061",
+      "end_time": "2026-07-15 20:07:49.830",
+      "end_source": "PanGPS.log.old:110700",
+      "duration_seconds": 62.769,
+      "status": "connected",
+      "connected_after_retry": false,
+      "certificate_selection_recovered": false,
+      "portal": "globalprotect.wei-aws-lab.com",
+      "gateway": "globalprotect.wei-aws-lab.com",
+      "gateway_ip": "100.50.81.108",
+      "username": "jsmith-pa",
+      "mode": "On-Demand",
+      "certificate_store_lookup": "user-and-machine",
+      "portal_auth_method": "cas",
+      "portal_auth_source": "IDP",
+      "gateway_auth_method": "saml",
+      "gateway_auth_source": "IDP",
+      "saml_used": true,
+      "auth_cookie_used": true,
+      "certificate_requested": false,
+      "certificate_exchange_count": 0,
+      "portal_certificate_exchange_count": 0,
+      "gateway_certificate_exchange_count": 0,
+      "selected_identities": [],
+      "selected_identity_sequence": [],
+      "selected_identity_transition": [],
+      "portal_selected_identities": [],
+      "gateway_selected_identities": [],
+      "selected_identity_stores": [],
+      "initial_selected_identity": null,
+      "initial_selected_identity_store": null,
+      "initial_selected_identity_status": null,
+      "final_portal_selected_identity": null,
+      "final_portal_selected_identity_store": null,
+      "final_gateway_selected_identity": null,
+      "final_gateway_selected_identity_store": null,
+      "successful_path_certificate_identity": null,
+      "successful_path_certificate_store": null,
+      "successful_path_certificate_phase": null,
+      "successful_machine_certificate": false,
+      "successful_user_certificate": false,
+      "machine_certificate_selection_attempted": false,
+      "user_certificate_selection_attempted": false,
+      "machine_certificate_selected": false,
+      "user_certificate_selected": false,
+      "client_certificate_write_count": 0,
+      "tunnel_connected": true,
+      "auth_failures": [],
+      "certificate_selection_failures": [],
+      "warnings": [],
+      "certificate_exchanges": [],
+      "timeline": [
+        {
+          "timestamp": "2026-07-15 20:06:47.061",
+          "phase": "portal",
+          "event": "Connection attempt inferred from retrieving configuration",
+          "source": "PanGPS.log.old:107560"
+        },
+        {
+          "timestamp": "2026-07-15 20:06:47.061",
+          "phase": "portal",
+          "event": "State: Retrieving configuration",
+          "source": "PanGPS.log.old:107560"
+        },
+        {
+          "timestamp": "2026-07-15 20:06:47.235",
+          "phase": "portal",
+          "event": "Waiting for SAML authentication response",
+          "source": "PanGPS.log.old:107711"
+        },
+        {
+          "timestamp": "2026-07-15 20:07:16.287",
+          "phase": "portal",
+          "event": "State: Disconnected",
+          "source": "PanGPS.log.old:107779"
+        },
+        {
+          "timestamp": "2026-07-15 20:07:19.014",
+          "phase": "portal",
+          "event": "Portal message continuation",
+          "source": "PanGPS.log.old:107840"
+        },
+        {
+          "timestamp": "2026-07-15 20:07:19.201",
+          "phase": "portal",
+          "event": "State: Retrieving configuration",
+          "source": "PanGPS.log.old:107939"
+        },
+        {
+          "timestamp": "2026-07-15 20:07:19.423",
+          "phase": "portal",
+          "event": "Waiting for SAML authentication response",
+          "source": "PanGPS.log.old:108090"
+        },
+        {
+          "timestamp": "2026-07-15 20:07:44.219",
+          "phase": "portal",
+          "event": "Portal message continuation",
+          "source": "PanGPS.log.old:108133"
+        },
+        {
+          "timestamp": "2026-07-15 20:07:44.229",
+          "phase": "portal",
+          "event": "State: Retrieving configuration",
+          "source": "PanGPS.log.old:108227"
+        },
+        {
+          "timestamp": "2026-07-15 20:07:44.266",
+          "phase": "portal",
+          "event": "Existing authentication cookie loaded",
+          "source": "PanGPS.log.old:108297"
+        },
+        {
+          "timestamp": "2026-07-15 20:07:44.266",
+          "phase": "portal",
+          "event": "Existing authentication cookie loaded",
+          "source": "PanGPS.log.old:108307"
+        },
+        {
+          "timestamp": "2026-07-15 20:07:44.266",
+          "phase": "portal",
+          "event": "Portal authentication: cas via IDP",
+          "source": "PanGPS.log.old:108329"
+        },
+        {
+          "timestamp": "2026-07-15 20:07:46.859",
+          "phase": "portal",
+          "event": "Certificate store lookup: user-and-machine",
+          "source": "PanGPS.log.old:108832"
+        },
+        {
+          "timestamp": "2026-07-15 20:07:49.560",
+          "phase": "gateway",
+          "event": "Existing authentication cookie loaded",
+          "source": "PanGPS.log.old:109799"
+        },
+        {
+          "timestamp": "2026-07-15 20:07:49.560",
+          "phase": "gateway",
+          "event": "Existing authentication cookie loaded",
+          "source": "PanGPS.log.old:109823"
+        },
+        {
+          "timestamp": "2026-07-15 20:07:49.560",
+          "phase": "gateway",
+          "event": "Existing authentication cookie loaded",
+          "source": "PanGPS.log.old:109824"
+        },
+        {
+          "timestamp": "2026-07-15 20:07:49.560",
+          "phase": "gateway",
+          "event": "Gateway authentication: saml via IDP",
+          "source": "PanGPS.log.old:109826"
+        },
+        {
+          "timestamp": "2026-07-15 20:07:49.561",
+          "phase": "gateway",
+          "event": "Existing authentication cookie loaded",
+          "source": "PanGPS.log.old:109843"
+        },
+        {
+          "timestamp": "2026-07-15 20:07:49.617",
+          "phase": "gateway",
+          "event": "State: Connecting",
+          "source": "PanGPS.log.old:109887"
+        },
+        {
+          "timestamp": "2026-07-15 20:07:49.713",
+          "phase": "gateway",
+          "event": "Tunnel connected to 100.50.81.108",
+          "source": "PanGPS.log.old:110108"
+        },
+        {
+          "timestamp": "2026-07-15 20:07:49.821",
+          "phase": "gateway",
+          "event": "VPN tunnel connected",
+          "source": "PanGPS.log.old:110692"
+        },
+        {
+          "timestamp": "2026-07-15 20:07:49.830",
+          "phase": "gateway",
+          "event": "State: Connected",
+          "source": "PanGPS.log.old:110700"
+        }
+      ],
+      "start_source": "PanGPS.log.old:107560"
+    },
+    {
+      "attempt_id": 22,
+      "start_time": "2026-07-15 21:35:41.742",
+      "end_time": "2026-07-15 21:36:05.364",
+      "end_source": "PanGPS.log.old:118414",
+      "duration_seconds": 23.622,
+      "status": "connected",
+      "connected_after_retry": false,
+      "certificate_selection_recovered": false,
+      "portal": "globalprotect.wei-aws-lab.com",
+      "gateway": "globalprotect.wei-aws-lab.com",
+      "gateway_ip": "100.50.81.108",
+      "username": "jsmith-pa",
+      "mode": "On-Demand",
+      "certificate_store_lookup": "user-and-machine",
+      "portal_auth_method": "cas",
+      "portal_auth_source": "IDP",
+      "gateway_auth_method": "saml",
+      "gateway_auth_source": "IDP",
+      "saml_used": true,
+      "auth_cookie_used": true,
+      "certificate_requested": false,
+      "certificate_exchange_count": 0,
+      "portal_certificate_exchange_count": 0,
+      "gateway_certificate_exchange_count": 0,
+      "selected_identities": [],
+      "selected_identity_sequence": [],
+      "selected_identity_transition": [],
+      "portal_selected_identities": [],
+      "gateway_selected_identities": [],
+      "selected_identity_stores": [],
+      "initial_selected_identity": null,
+      "initial_selected_identity_store": null,
+      "initial_selected_identity_status": null,
+      "final_portal_selected_identity": null,
+      "final_portal_selected_identity_store": null,
+      "final_gateway_selected_identity": null,
+      "final_gateway_selected_identity_store": null,
+      "successful_path_certificate_identity": null,
+      "successful_path_certificate_store": null,
+      "successful_path_certificate_phase": null,
+      "successful_machine_certificate": false,
+      "successful_user_certificate": false,
+      "machine_certificate_selection_attempted": false,
+      "user_certificate_selection_attempted": false,
+      "machine_certificate_selected": false,
+      "user_certificate_selected": false,
+      "client_certificate_write_count": 0,
+      "tunnel_connected": true,
+      "auth_failures": [],
+      "certificate_selection_failures": [],
+      "warnings": [],
+      "certificate_exchanges": [],
+      "timeline": [
+        {
+          "timestamp": "2026-07-15 21:35:41.742",
+          "phase": "portal",
+          "event": "Portal connection request received",
+          "source": "PanGPS.log.old:115474"
+        },
+        {
+          "timestamp": "2026-07-15 21:35:42.005",
+          "phase": "portal",
+          "event": "State: Retrieving configuration",
+          "source": "PanGPS.log.old:115570"
+        },
+        {
+          "timestamp": "2026-07-15 21:35:43.298",
+          "phase": "portal",
+          "event": "Waiting for SAML authentication response",
+          "source": "PanGPS.log.old:115721"
+        },
+        {
+          "timestamp": "2026-07-15 21:35:58.982",
+          "phase": "portal",
+          "event": "Portal message continuation",
+          "source": "PanGPS.log.old:115763"
+        },
+        {
+          "timestamp": "2026-07-15 21:35:59.127",
+          "phase": "portal",
+          "event": "State: Retrieving configuration",
+          "source": "PanGPS.log.old:115858"
+        },
+        {
+          "timestamp": "2026-07-15 21:35:59.165",
+          "phase": "portal",
+          "event": "Existing authentication cookie loaded",
+          "source": "PanGPS.log.old:115928"
+        },
+        {
+          "timestamp": "2026-07-15 21:35:59.166",
+          "phase": "portal",
+          "event": "Existing authentication cookie loaded",
+          "source": "PanGPS.log.old:115938"
+        },
+        {
+          "timestamp": "2026-07-15 21:35:59.166",
+          "phase": "portal",
+          "event": "Portal authentication: cas via IDP",
+          "source": "PanGPS.log.old:115960"
+        },
+        {
+          "timestamp": "2026-07-15 21:36:02.659",
+          "phase": "portal",
+          "event": "Certificate store lookup: user-and-machine",
+          "source": "PanGPS.log.old:116463"
+        },
+        {
+          "timestamp": "2026-07-15 21:36:05.118",
+          "phase": "gateway",
+          "event": "Existing authentication cookie loaded",
+          "source": "PanGPS.log.old:116821"
+        },
+        {
+          "timestamp": "2026-07-15 21:36:05.118",
+          "phase": "gateway",
+          "event": "Existing authentication cookie loaded",
+          "source": "PanGPS.log.old:116845"
+        },
+        {
+          "timestamp": "2026-07-15 21:36:05.118",
+          "phase": "gateway",
+          "event": "Existing authentication cookie loaded",
+          "source": "PanGPS.log.old:116846"
+        },
+        {
+          "timestamp": "2026-07-15 21:36:05.118",
+          "phase": "gateway",
+          "event": "Gateway authentication: saml via IDP",
+          "source": "PanGPS.log.old:116848"
+        },
+        {
+          "timestamp": "2026-07-15 21:36:05.181",
+          "phase": "gateway",
+          "event": "State: Connecting",
+          "source": "PanGPS.log.old:117277"
+        },
+        {
+          "timestamp": "2026-07-15 21:36:05.274",
+          "phase": "gateway",
+          "event": "Tunnel connected to 100.50.81.108",
+          "source": "PanGPS.log.old:117739"
+        },
+        {
+          "timestamp": "2026-07-15 21:36:05.354",
+          "phase": "gateway",
+          "event": "VPN tunnel connected",
+          "source": "PanGPS.log.old:118401"
+        },
+        {
+          "timestamp": "2026-07-15 21:36:05.364",
+          "phase": "gateway",
+          "event": "State: Connected",
+          "source": "PanGPS.log.old:118414"
+        }
+      ],
+      "start_source": "PanGPS.log.old:115474"
+    },
+    {
+      "attempt_id": 23,
+      "start_time": "2026-07-16 10:52:07.920",
+      "end_time": "2026-07-16 10:52:27.056",
+      "end_source": "PanGPS.log:8576",
+      "duration_seconds": 19.136,
+      "status": "connected",
+      "connected_after_retry": false,
+      "certificate_selection_recovered": false,
+      "portal": "globalprotect.wei-aws-lab.com",
+      "gateway": "globalprotect.wei-aws-lab.com",
+      "gateway_ip": "100.50.81.108",
+      "username": "richardcross",
+      "mode": "On-Demand",
+      "certificate_store_lookup": "user-and-machine",
+      "portal_auth_method": "cas",
+      "portal_auth_source": "IDP",
+      "gateway_auth_method": "saml",
+      "gateway_auth_source": "IDP",
+      "saml_used": true,
+      "auth_cookie_used": true,
+      "certificate_requested": false,
+      "certificate_exchange_count": 0,
+      "portal_certificate_exchange_count": 0,
+      "gateway_certificate_exchange_count": 0,
+      "selected_identities": [],
+      "selected_identity_sequence": [],
+      "selected_identity_transition": [],
+      "portal_selected_identities": [],
+      "gateway_selected_identities": [],
+      "selected_identity_stores": [],
+      "initial_selected_identity": null,
+      "initial_selected_identity_store": null,
+      "initial_selected_identity_status": null,
+      "final_portal_selected_identity": null,
+      "final_portal_selected_identity_store": null,
+      "final_gateway_selected_identity": null,
+      "final_gateway_selected_identity_store": null,
+      "successful_path_certificate_identity": null,
+      "successful_path_certificate_store": null,
+      "successful_path_certificate_phase": null,
+      "successful_machine_certificate": false,
+      "successful_user_certificate": false,
+      "machine_certificate_selection_attempted": false,
+      "user_certificate_selection_attempted": false,
+      "machine_certificate_selected": false,
+      "user_certificate_selected": false,
+      "client_certificate_write_count": 0,
+      "tunnel_connected": true,
+      "auth_failures": [],
+      "certificate_selection_failures": [],
+      "warnings": [],
+      "certificate_exchanges": [],
+      "timeline": [
+        {
+          "timestamp": "2026-07-16 10:52:07.920",
+          "phase": "portal",
+          "event": "Portal connection request received",
+          "source": "PanGPS.log:5700"
+        },
+        {
+          "timestamp": "2026-07-16 10:52:08.091",
+          "phase": "portal",
+          "event": "State: Retrieving configuration",
+          "source": "PanGPS.log:5799"
+        },
+        {
+          "timestamp": "2026-07-16 10:52:08.396",
+          "phase": "portal",
+          "event": "Waiting for SAML authentication response",
+          "source": "PanGPS.log:5950"
+        },
+        {
+          "timestamp": "2026-07-16 10:52:20.344",
+          "phase": "portal",
+          "event": "Portal message continuation",
+          "source": "PanGPS.log:5991"
+        },
+        {
+          "timestamp": "2026-07-16 10:52:20.513",
+          "phase": "portal",
+          "event": "State: Retrieving configuration",
+          "source": "PanGPS.log:6086"
+        },
+        {
+          "timestamp": "2026-07-16 10:52:20.549",
+          "phase": "portal",
+          "event": "Existing authentication cookie loaded",
+          "source": "PanGPS.log:6156"
+        },
+        {
+          "timestamp": "2026-07-16 10:52:20.549",
+          "phase": "portal",
+          "event": "Existing authentication cookie loaded",
+          "source": "PanGPS.log:6166"
+        },
+        {
+          "timestamp": "2026-07-16 10:52:20.550",
+          "phase": "portal",
+          "event": "Portal authentication: cas via IDP",
+          "source": "PanGPS.log:6188"
+        },
+        {
+          "timestamp": "2026-07-16 10:52:24.212",
+          "phase": "portal",
+          "event": "Certificate store lookup: user-and-machine",
+          "source": "PanGPS.log:6691"
+        },
+        {
+          "timestamp": "2026-07-16 10:52:26.799",
+          "phase": "gateway",
+          "event": "Existing authentication cookie loaded",
+          "source": "PanGPS.log:7422"
+        },
+        {
+          "timestamp": "2026-07-16 10:52:26.799",
+          "phase": "gateway",
+          "event": "Existing authentication cookie loaded",
+          "source": "PanGPS.log:7446"
+        },
+        {
+          "timestamp": "2026-07-16 10:52:26.799",
+          "phase": "gateway",
+          "event": "Existing authentication cookie loaded",
+          "source": "PanGPS.log:7447"
+        },
+        {
+          "timestamp": "2026-07-16 10:52:26.799",
+          "phase": "gateway",
+          "event": "Gateway authentication: saml via IDP",
+          "source": "PanGPS.log:7449"
+        },
+        {
+          "timestamp": "2026-07-16 10:52:26.866",
+          "phase": "gateway",
+          "event": "State: Connecting",
+          "source": "PanGPS.log:7510"
+        },
+        {
+          "timestamp": "2026-07-16 10:52:26.961",
+          "phase": "gateway",
+          "event": "Tunnel connected to 100.50.81.108",
+          "source": "PanGPS.log:7972"
+        },
+        {
+          "timestamp": "2026-07-16 10:52:27.044",
+          "phase": "gateway",
+          "event": "VPN tunnel connected",
+          "source": "PanGPS.log:8568"
+        },
+        {
+          "timestamp": "2026-07-16 10:52:27.056",
+          "phase": "gateway",
+          "event": "State: Connected",
+          "source": "PanGPS.log:8576"
+        }
+      ],
+      "start_source": "PanGPS.log:5700"
+    },
+    {
+      "attempt_id": 24,
+      "start_time": "2026-07-16 13:15:59.571",
+      "end_time": "2026-07-16 13:17:00.134",
+      "end_source": "PanGPS.log:12387",
+      "duration_seconds": 60.563,
+      "status": "incomplete",
+      "connected_after_retry": false,
+      "certificate_selection_recovered": false,
+      "portal": "globalprotect.wei-aws-lab.com",
+      "gateway": null,
+      "gateway_ip": null,
+      "username": null,
+      "mode": "On-Demand",
+      "certificate_store_lookup": null,
+      "portal_auth_method": null,
+      "portal_auth_source": null,
+      "gateway_auth_method": null,
+      "gateway_auth_source": null,
+      "saml_used": true,
+      "auth_cookie_used": false,
+      "certificate_requested": false,
+      "certificate_exchange_count": 0,
+      "portal_certificate_exchange_count": 0,
+      "gateway_certificate_exchange_count": 0,
+      "selected_identities": [],
+      "selected_identity_sequence": [],
+      "selected_identity_transition": [],
+      "portal_selected_identities": [],
+      "gateway_selected_identities": [],
+      "selected_identity_stores": [],
+      "initial_selected_identity": null,
+      "initial_selected_identity_store": null,
+      "initial_selected_identity_status": null,
+      "final_portal_selected_identity": null,
+      "final_portal_selected_identity_store": null,
+      "final_gateway_selected_identity": null,
+      "final_gateway_selected_identity_store": null,
+      "successful_path_certificate_identity": null,
+      "successful_path_certificate_store": null,
+      "successful_path_certificate_phase": null,
+      "successful_machine_certificate": false,
+      "successful_user_certificate": false,
+      "machine_certificate_selection_attempted": false,
+      "user_certificate_selection_attempted": false,
+      "machine_certificate_selected": false,
+      "user_certificate_selected": false,
+      "client_certificate_write_count": 0,
+      "tunnel_connected": false,
+      "auth_failures": [],
+      "certificate_selection_failures": [],
+      "warnings": [],
+      "certificate_exchanges": [],
+      "timeline": [
+        {
+          "timestamp": "2026-07-16 13:15:59.571",
+          "phase": "portal",
+          "event": "Portal connection request received",
+          "source": "PanGPS.log:12091"
+        },
+        {
+          "timestamp": "2026-07-16 13:15:59.899",
+          "phase": "portal",
+          "event": "State: Retrieving configuration",
+          "source": "PanGPS.log:12187"
+        },
+        {
+          "timestamp": "2026-07-16 13:16:00.160",
+          "phase": "portal",
+          "event": "Waiting for SAML authentication response",
+          "source": "PanGPS.log:12338"
+        },
+        {
+          "timestamp": "2026-07-16 13:17:00.134",
+          "phase": "portal",
+          "event": "State: Disconnected",
+          "source": "PanGPS.log:12387"
+        }
+      ],
+      "start_source": "PanGPS.log:12091"
+    },
+    {
+      "attempt_id": 25,
+      "start_time": "2026-07-16 19:04:33.920",
+      "end_time": "2026-07-16 19:06:06.425",
+      "end_source": "PanGPS.log:21470",
+      "duration_seconds": 92.505,
+      "status": "connected",
+      "connected_after_retry": false,
+      "certificate_selection_recovered": false,
+      "portal": "globalprotect.wei-aws-lab.com",
+      "gateway": "globalprotect.wei-aws-lab.com",
+      "gateway_ip": "100.50.81.108",
+      "username": "richardcross",
+      "mode": "On-Demand",
+      "certificate_store_lookup": "user-and-machine",
+      "portal_auth_method": "cas",
+      "portal_auth_source": "IDP",
+      "gateway_auth_method": "saml",
+      "gateway_auth_source": "IDP",
+      "saml_used": true,
+      "auth_cookie_used": true,
+      "certificate_requested": true,
+      "certificate_exchange_count": 4,
+      "portal_certificate_exchange_count": 3,
+      "gateway_certificate_exchange_count": 1,
+      "selected_identities": [
+        "local-rich-cross"
+      ],
+      "selected_identity_sequence": [
+        "local-rich-cross",
+        "local-rich-cross",
+        "local-rich-cross",
+        "local-rich-cross"
+      ],
+      "selected_identity_transition": [
+        "local-rich-cross"
+      ],
+      "portal_selected_identities": [
+        "local-rich-cross"
+      ],
+      "gateway_selected_identities": [
+        "local-rich-cross"
+      ],
+      "selected_identity_stores": [
+        "user"
+      ],
+      "initial_selected_identity": "local-rich-cross",
+      "initial_selected_identity_store": "user",
+      "initial_selected_identity_status": "selected",
+      "final_portal_selected_identity": "local-rich-cross",
+      "final_portal_selected_identity_store": "user",
+      "final_gateway_selected_identity": "local-rich-cross",
+      "final_gateway_selected_identity_store": "user",
+      "successful_path_certificate_identity": "local-rich-cross",
+      "successful_path_certificate_store": "user",
+      "successful_path_certificate_phase": "gateway",
+      "successful_machine_certificate": false,
+      "successful_user_certificate": true,
+      "machine_certificate_selection_attempted": false,
+      "user_certificate_selection_attempted": true,
+      "machine_certificate_selected": false,
+      "user_certificate_selected": true,
+      "client_certificate_write_count": 1,
+      "tunnel_connected": true,
+      "auth_failures": [],
+      "certificate_selection_failures": [],
+      "warnings": [],
+      "certificate_exchanges": [
+        {
+          "phase": "portal",
+          "timestamp": "2026-07-16 19:04:34.304",
+          "source": "PanGPS.log:18477",
+          "thread_id": "32855",
+          "user_identities": [
+            "local-rich-cross"
+          ],
+          "system_identities": [
+            "rich-mac"
+          ],
+          "matching_identity_count": 1,
+          "selected_identity": "local-rich-cross",
+          "selected_store": "user",
+          "selection_status": "selected",
+          "selection_error": null,
+          "keychain_locked": false
+        },
+        {
+          "phase": "portal",
+          "timestamp": "2026-07-16 19:05:29.526",
+          "source": "PanGPS.log:18878",
+          "thread_id": "20291",
+          "user_identities": [
+            "local-rich-cross"
+          ],
+          "system_identities": [
+            "rich-mac"
+          ],
+          "matching_identity_count": 1,
+          "selected_identity": "local-rich-cross",
+          "selected_store": "user",
+          "selection_status": "selected",
+          "selection_error": null,
+          "keychain_locked": false
+        },
+        {
+          "phase": "portal",
+          "timestamp": "2026-07-16 19:06:00.578",
+          "source": "PanGPS.log:19264",
+          "thread_id": "32039",
+          "user_identities": [],
+          "system_identities": [],
+          "matching_identity_count": null,
+          "selected_identity": "local-rich-cross",
+          "selected_store": "user",
+          "selection_status": "selected",
+          "selection_error": null,
+          "keychain_locked": false
+        },
+        {
+          "phase": "gateway",
+          "timestamp": "2026-07-16 19:06:06.034",
+          "source": "PanGPS.log:20058",
+          "thread_id": "32039",
+          "user_identities": [
+            "local-rich-cross"
+          ],
+          "system_identities": [
+            "rich-mac"
+          ],
+          "matching_identity_count": 1,
+          "selected_identity": "local-rich-cross",
+          "selected_store": "user",
+          "selection_status": "selected",
+          "selection_error": null,
+          "keychain_locked": false
+        }
+      ],
+      "timeline": [
+        {
+          "timestamp": "2026-07-16 19:04:33.920",
+          "phase": "portal",
+          "event": "Portal connection request received",
+          "source": "PanGPS.log:18287"
+        },
+        {
+          "timestamp": "2026-07-16 19:04:34.099",
+          "phase": "portal",
+          "event": "State: Retrieving configuration",
+          "source": "PanGPS.log:18385"
+        },
+        {
+          "timestamp": "2026-07-16 19:04:34.304",
+          "phase": "portal",
+          "event": "Server requested a client certificate",
+          "source": "PanGPS.log:18477"
+        },
+        {
+          "timestamp": "2026-07-16 19:04:34.308",
+          "phase": "portal",
+          "event": "User identity available: local-rich-cross",
+          "source": "PanGPS.log:18493"
+        },
+        {
+          "timestamp": "2026-07-16 19:04:34.308",
+          "phase": "portal",
+          "event": "Machine identity available: rich-mac",
+          "source": "PanGPS.log:18495"
+        },
+        {
+          "timestamp": "2026-07-16 19:04:34.308",
+          "phase": "portal",
+          "event": "Matching certificate identities: 1",
+          "source": "PanGPS.log:18521"
+        },
+        {
+          "timestamp": "2026-07-16 19:04:34.309",
+          "phase": "portal",
+          "event": "Selected certificate identity: local-rich-cross (user)",
+          "source": "PanGPS.log:18524"
+        },
+        {
+          "timestamp": "2026-07-16 19:04:35.469",
+          "phase": "portal",
+          "event": "Waiting for SAML authentication response",
+          "source": "PanGPS.log:18584"
+        },
+        {
+          "timestamp": "2026-07-16 19:05:27.536",
+          "phase": "portal",
+          "event": "State: Disconnected",
+          "source": "PanGPS.log:18632"
+        },
+        {
+          "timestamp": "2026-07-16 19:05:29.218",
+          "phase": "portal",
+          "event": "Portal message continuation",
+          "source": "PanGPS.log:18691"
+        },
+        {
+          "timestamp": "2026-07-16 19:05:29.401",
+          "phase": "portal",
+          "event": "State: Retrieving configuration",
+          "source": "PanGPS.log:18786"
+        },
+        {
+          "timestamp": "2026-07-16 19:05:29.526",
+          "phase": "portal",
+          "event": "Server requested a client certificate",
+          "source": "PanGPS.log:18878"
+        },
+        {
+          "timestamp": "2026-07-16 19:05:29.530",
+          "phase": "portal",
+          "event": "User identity available: local-rich-cross",
+          "source": "PanGPS.log:18894"
+        },
+        {
+          "timestamp": "2026-07-16 19:05:29.530",
+          "phase": "portal",
+          "event": "Machine identity available: rich-mac",
+          "source": "PanGPS.log:18896"
+        },
+        {
+          "timestamp": "2026-07-16 19:05:29.530",
+          "phase": "portal",
+          "event": "Matching certificate identities: 1",
+          "source": "PanGPS.log:18922"
+        },
+        {
+          "timestamp": "2026-07-16 19:05:29.531",
+          "phase": "portal",
+          "event": "Selected certificate identity: local-rich-cross (user)",
+          "source": "PanGPS.log:18925"
+        },
+        {
+          "timestamp": "2026-07-16 19:05:29.613",
+          "phase": "portal",
+          "event": "Waiting for SAML authentication response",
+          "source": "PanGPS.log:18985"
+        },
+        {
+          "timestamp": "2026-07-16 19:06:00.293",
+          "phase": "portal",
+          "event": "Portal message continuation",
+          "source": "PanGPS.log:19029"
+        },
+        {
+          "timestamp": "2026-07-16 19:06:00.459",
+          "phase": "portal",
+          "event": "State: Retrieving configuration",
+          "source": "PanGPS.log:19123"
+        },
+        {
+          "timestamp": "2026-07-16 19:06:00.498",
+          "phase": "portal",
+          "event": "Existing authentication cookie loaded",
+          "source": "PanGPS.log:19193"
+        },
+        {
+          "timestamp": "2026-07-16 19:06:00.498",
+          "phase": "portal",
+          "event": "Existing authentication cookie loaded",
+          "source": "PanGPS.log:19203"
+        },
+        {
+          "timestamp": "2026-07-16 19:06:00.498",
+          "phase": "portal",
+          "event": "Portal authentication: cas via IDP",
+          "source": "PanGPS.log:19225"
+        },
+        {
+          "timestamp": "2026-07-16 19:06:00.578",
+          "phase": "portal",
+          "event": "Server requested a client certificate",
+          "source": "PanGPS.log:19264"
+        },
+        {
+          "timestamp": "2026-07-16 19:06:00.579",
+          "phase": "portal",
+          "event": "Selected certificate identity: local-rich-cross (user)",
+          "source": "PanGPS.log:19267"
+        },
+        {
+          "timestamp": "2026-07-16 19:06:03.622",
+          "phase": "portal",
+          "event": "Certificate store lookup: user-and-machine",
+          "source": "PanGPS.log:19763"
+        },
+        {
+          "timestamp": "2026-07-16 19:06:05.965",
+          "phase": "gateway",
+          "event": "TLS client certificate written",
+          "source": "PanGPS.log:19989"
+        },
+        {
+          "timestamp": "2026-07-16 19:06:06.034",
+          "phase": "gateway",
+          "event": "Server requested a client certificate",
+          "source": "PanGPS.log:20058"
+        },
+        {
+          "timestamp": "2026-07-16 19:06:06.035",
+          "phase": "gateway",
+          "event": "User identity available: local-rich-cross",
+          "source": "PanGPS.log:20074"
+        },
+        {
+          "timestamp": "2026-07-16 19:06:06.035",
+          "phase": "gateway",
+          "event": "Machine identity available: rich-mac",
+          "source": "PanGPS.log:20076"
+        },
+        {
+          "timestamp": "2026-07-16 19:06:06.035",
+          "phase": "gateway",
+          "event": "Matching certificate identities: 1",
+          "source": "PanGPS.log:20102"
+        },
+        {
+          "timestamp": "2026-07-16 19:06:06.035",
+          "phase": "gateway",
+          "event": "Selected certificate identity: local-rich-cross (user)",
+          "source": "PanGPS.log:20105"
+        },
+        {
+          "timestamp": "2026-07-16 19:06:06.059",
+          "phase": "portal",
+          "event": "Portal message continuation",
+          "source": "PanGPS.log:20107"
+        },
+        {
+          "timestamp": "2026-07-16 19:06:06.114",
+          "phase": "gateway",
+          "event": "Existing authentication cookie loaded",
+          "source": "PanGPS.log:20188"
+        },
+        {
+          "timestamp": "2026-07-16 19:06:06.115",
+          "phase": "gateway",
+          "event": "Existing authentication cookie loaded",
+          "source": "PanGPS.log:20212"
+        },
+        {
+          "timestamp": "2026-07-16 19:06:06.115",
+          "phase": "gateway",
+          "event": "Existing authentication cookie loaded",
+          "source": "PanGPS.log:20213"
+        },
+        {
+          "timestamp": "2026-07-16 19:06:06.115",
+          "phase": "gateway",
+          "event": "Gateway authentication: saml via IDP",
+          "source": "PanGPS.log:20215"
+        },
+        {
+          "timestamp": "2026-07-16 19:06:06.115",
+          "phase": "gateway",
+          "event": "Existing authentication cookie loaded",
+          "source": "PanGPS.log:20222"
+        },
+        {
+          "timestamp": "2026-07-16 19:06:06.180",
+          "phase": "gateway",
+          "event": "State: Connecting",
+          "source": "PanGPS.log:20276"
+        },
+        {
+          "timestamp": "2026-07-16 19:06:06.345",
+          "phase": "gateway",
+          "event": "Tunnel connected to 100.50.81.108",
+          "source": "PanGPS.log:20498"
+        },
+        {
+          "timestamp": "2026-07-16 19:06:06.414",
+          "phase": "gateway",
+          "event": "VPN tunnel connected",
+          "source": "PanGPS.log:21463"
+        },
+        {
+          "timestamp": "2026-07-16 19:06:06.425",
+          "phase": "gateway",
+          "event": "State: Connected",
+          "source": "PanGPS.log:21470"
+        }
+      ],
+      "start_source": "PanGPS.log:18287"
+    },
+    {
+      "attempt_id": 26,
+      "start_time": "2026-07-16 19:06:13.247",
+      "end_time": "2026-07-16 19:06:19.030",
+      "end_source": "PanGPS.log:24833",
+      "duration_seconds": 5.783,
+      "status": "connected",
+      "connected_after_retry": false,
+      "certificate_selection_recovered": false,
+      "portal": "globalprotect.wei-aws-lab.com",
+      "gateway": "globalprotect.wei-aws-lab.com",
+      "gateway_ip": "100.50.81.108",
+      "username": "richardcross",
+      "mode": "On-Demand",
+      "certificate_store_lookup": "user-and-machine",
+      "portal_auth_method": "cas",
+      "portal_auth_source": "IDP",
+      "gateway_auth_method": "saml",
+      "gateway_auth_source": "IDP",
+      "saml_used": true,
+      "auth_cookie_used": true,
+      "certificate_requested": true,
+      "certificate_exchange_count": 1,
+      "portal_certificate_exchange_count": 1,
+      "gateway_certificate_exchange_count": 0,
+      "selected_identities": [
+        "local-rich-cross"
+      ],
+      "selected_identity_sequence": [
+        "local-rich-cross"
+      ],
+      "selected_identity_transition": [
+        "local-rich-cross"
+      ],
+      "portal_selected_identities": [
+        "local-rich-cross"
+      ],
+      "gateway_selected_identities": [],
+      "selected_identity_stores": [
+        "user"
+      ],
+      "initial_selected_identity": "local-rich-cross",
+      "initial_selected_identity_store": "user",
+      "initial_selected_identity_status": "selected",
+      "final_portal_selected_identity": "local-rich-cross",
+      "final_portal_selected_identity_store": "user",
+      "final_gateway_selected_identity": null,
+      "final_gateway_selected_identity_store": null,
+      "successful_path_certificate_identity": "local-rich-cross",
+      "successful_path_certificate_store": "user",
+      "successful_path_certificate_phase": "portal",
+      "successful_machine_certificate": false,
+      "successful_user_certificate": true,
+      "machine_certificate_selection_attempted": false,
+      "user_certificate_selection_attempted": true,
+      "machine_certificate_selected": false,
+      "user_certificate_selected": true,
+      "client_certificate_write_count": 1,
+      "tunnel_connected": true,
+      "auth_failures": [],
+      "certificate_selection_failures": [],
+      "warnings": [],
+      "certificate_exchanges": [
+        {
+          "phase": "portal",
+          "timestamp": "2026-07-16 19:06:18.449",
+          "source": "PanGPS.log:23596",
+          "thread_id": "29771",
+          "user_identities": [
+            "local-rich-cross"
+          ],
+          "system_identities": [
+            "rich-mac"
+          ],
+          "matching_identity_count": 1,
+          "selected_identity": "local-rich-cross",
+          "selected_store": "user",
+          "selection_status": "selected",
+          "selection_error": null,
+          "keychain_locked": false
+        }
+      ],
+      "timeline": [
+        {
+          "timestamp": "2026-07-16 19:06:13.247",
+          "phase": "portal",
+          "event": "Connection attempt inferred from retrieving configuration",
+          "source": "PanGPS.log:22299"
+        },
+        {
+          "timestamp": "2026-07-16 19:06:13.247",
+          "phase": "portal",
+          "event": "State: Retrieving configuration",
+          "source": "PanGPS.log:22299"
+        },
+        {
+          "timestamp": "2026-07-16 19:06:13.283",
+          "phase": "portal",
+          "event": "Existing authentication cookie loaded",
+          "source": "PanGPS.log:22369"
+        },
+        {
+          "timestamp": "2026-07-16 19:06:13.283",
+          "phase": "portal",
+          "event": "Existing authentication cookie loaded",
+          "source": "PanGPS.log:22379"
+        },
+        {
+          "timestamp": "2026-07-16 19:06:13.283",
+          "phase": "portal",
+          "event": "Portal authentication: cas via IDP",
+          "source": "PanGPS.log:22401"
+        },
+        {
+          "timestamp": "2026-07-16 19:06:15.767",
+          "phase": "portal",
+          "event": "Certificate store lookup: user-and-machine",
+          "source": "PanGPS.log:22915"
+        },
+        {
+          "timestamp": "2026-07-16 19:06:18.216",
+          "phase": "portal",
+          "event": "Portal message continuation",
+          "source": "PanGPS.log:23134"
+        },
+        {
+          "timestamp": "2026-07-16 19:06:18.290",
+          "phase": "gateway",
+          "event": "TLS client certificate written",
+          "source": "PanGPS.log:23157"
+        },
+        {
+          "timestamp": "2026-07-16 19:06:18.449",
+          "phase": "portal",
+          "event": "Server requested a client certificate",
+          "source": "PanGPS.log:23596"
+        },
+        {
+          "timestamp": "2026-07-16 19:06:18.450",
+          "phase": "portal",
+          "event": "User identity available: local-rich-cross",
+          "source": "PanGPS.log:23612"
+        },
+        {
+          "timestamp": "2026-07-16 19:06:18.450",
+          "phase": "portal",
+          "event": "Machine identity available: rich-mac",
+          "source": "PanGPS.log:23614"
+        },
+        {
+          "timestamp": "2026-07-16 19:06:18.450",
+          "phase": "portal",
+          "event": "Matching certificate identities: 1",
+          "source": "PanGPS.log:23640"
+        },
+        {
+          "timestamp": "2026-07-16 19:06:18.451",
+          "phase": "portal",
+          "event": "Selected certificate identity: local-rich-cross (user)",
+          "source": "PanGPS.log:23643"
+        },
+        {
+          "timestamp": "2026-07-16 19:06:18.604",
+          "phase": "gateway",
+          "event": "Existing authentication cookie loaded",
+          "source": "PanGPS.log:23709"
+        },
+        {
+          "timestamp": "2026-07-16 19:06:18.604",
+          "phase": "gateway",
+          "event": "Existing authentication cookie loaded",
+          "source": "PanGPS.log:23733"
+        },
+        {
+          "timestamp": "2026-07-16 19:06:18.604",
+          "phase": "gateway",
+          "event": "Existing authentication cookie loaded",
+          "source": "PanGPS.log:23734"
+        },
+        {
+          "timestamp": "2026-07-16 19:06:18.604",
+          "phase": "gateway",
+          "event": "Gateway authentication: saml via IDP",
+          "source": "PanGPS.log:23736"
+        },
+        {
+          "timestamp": "2026-07-16 19:06:18.757",
+          "phase": "gateway",
+          "event": "State: Connecting",
+          "source": "PanGPS.log:23797"
+        },
+        {
+          "timestamp": "2026-07-16 19:06:18.918",
+          "phase": "gateway",
+          "event": "Tunnel connected to 100.50.81.108",
+          "source": "PanGPS.log:24261"
+        },
+        {
+          "timestamp": "2026-07-16 19:06:19.022",
+          "phase": "gateway",
+          "event": "VPN tunnel connected",
+          "source": "PanGPS.log:24825"
+        },
+        {
+          "timestamp": "2026-07-16 19:06:19.030",
+          "phase": "gateway",
+          "event": "State: Connected",
+          "source": "PanGPS.log:24833"
+        }
+      ],
+      "start_source": "PanGPS.log:22299"
+    },
+    {
+      "attempt_id": 27,
+      "start_time": "2026-07-16 19:06:20.820",
+      "end_time": "2026-07-16 19:06:21.209",
+      "end_source": "PanGPS.log:25617",
+      "duration_seconds": 0.389,
+      "status": "incomplete",
+      "connected_after_retry": false,
+      "certificate_selection_recovered": false,
+      "portal": "globalprotect.wei-aws-lab.com",
+      "gateway": null,
+      "gateway_ip": null,
+      "username": null,
+      "mode": "On-Demand",
+      "certificate_store_lookup": null,
+      "portal_auth_method": null,
+      "portal_auth_source": null,
+      "gateway_auth_method": null,
+      "gateway_auth_source": null,
+      "saml_used": true,
+      "auth_cookie_used": false,
+      "certificate_requested": true,
+      "certificate_exchange_count": 1,
+      "portal_certificate_exchange_count": 1,
+      "gateway_certificate_exchange_count": 0,
+      "selected_identities": [
+        "local-rich-cross"
+      ],
+      "selected_identity_sequence": [
+        "local-rich-cross"
+      ],
+      "selected_identity_transition": [
+        "local-rich-cross"
+      ],
+      "portal_selected_identities": [
+        "local-rich-cross"
+      ],
+      "gateway_selected_identities": [],
+      "selected_identity_stores": [
+        "user"
+      ],
+      "initial_selected_identity": "local-rich-cross",
+      "initial_selected_identity_store": "user",
+      "initial_selected_identity_status": "selected",
+      "final_portal_selected_identity": "local-rich-cross",
+      "final_portal_selected_identity_store": "user",
+      "final_gateway_selected_identity": null,
+      "final_gateway_selected_identity_store": null,
+      "successful_path_certificate_identity": null,
+      "successful_path_certificate_store": null,
+      "successful_path_certificate_phase": null,
+      "successful_machine_certificate": false,
+      "successful_user_certificate": false,
+      "machine_certificate_selection_attempted": false,
+      "user_certificate_selection_attempted": true,
+      "machine_certificate_selected": false,
+      "user_certificate_selected": true,
+      "client_certificate_write_count": 0,
+      "tunnel_connected": false,
+      "auth_failures": [],
+      "certificate_selection_failures": [],
+      "warnings": [],
+      "certificate_exchanges": [
+        {
+          "phase": "portal",
+          "timestamp": "2026-07-16 19:06:21.112",
+          "source": "PanGPS.log:25510",
+          "thread_id": "20295",
+          "user_identities": [
+            "local-rich-cross"
+          ],
+          "system_identities": [
+            "rich-mac"
+          ],
+          "matching_identity_count": 1,
+          "selected_identity": "local-rich-cross",
+          "selected_store": "user",
+          "selection_status": "selected",
+          "selection_error": null,
+          "keychain_locked": false
+        }
+      ],
+      "timeline": [
+        {
+          "timestamp": "2026-07-16 19:06:20.820",
+          "phase": "portal",
+          "event": "Connection attempt inferred from retrieving configuration",
+          "source": "PanGPS.log:25418"
+        },
+        {
+          "timestamp": "2026-07-16 19:06:20.820",
+          "phase": "portal",
+          "event": "State: Retrieving configuration",
+          "source": "PanGPS.log:25418"
+        },
+        {
+          "timestamp": "2026-07-16 19:06:21.112",
+          "phase": "portal",
+          "event": "Server requested a client certificate",
+          "source": "PanGPS.log:25510"
+        },
+        {
+          "timestamp": "2026-07-16 19:06:21.114",
+          "phase": "portal",
+          "event": "User identity available: local-rich-cross",
+          "source": "PanGPS.log:25526"
+        },
+        {
+          "timestamp": "2026-07-16 19:06:21.114",
+          "phase": "portal",
+          "event": "Machine identity available: rich-mac",
+          "source": "PanGPS.log:25528"
+        },
+        {
+          "timestamp": "2026-07-16 19:06:21.114",
+          "phase": "portal",
+          "event": "Matching certificate identities: 1",
+          "source": "PanGPS.log:25554"
+        },
+        {
+          "timestamp": "2026-07-16 19:06:21.115",
+          "phase": "portal",
+          "event": "Selected certificate identity: local-rich-cross (user)",
+          "source": "PanGPS.log:25557"
+        },
+        {
+          "timestamp": "2026-07-16 19:06:21.209",
+          "phase": "portal",
+          "event": "Waiting for SAML authentication response",
+          "source": "PanGPS.log:25617"
+        }
+      ],
+      "start_source": "PanGPS.log:25418"
+    },
+    {
+      "attempt_id": 28,
+      "start_time": "2026-07-16 19:42:28.599",
+      "end_time": "2026-07-16 19:43:55.030",
+      "end_source": "PanGPS.log:28769",
+      "duration_seconds": 86.431,
+      "status": "connected",
+      "connected_after_retry": false,
+      "certificate_selection_recovered": false,
+      "portal": "globalprotect.wei-aws-lab.com",
+      "gateway": "globalprotect.wei-aws-lab.com",
+      "gateway_ip": "100.50.81.108",
+      "username": "richardcross",
+      "mode": "On-Demand",
+      "certificate_store_lookup": "user-and-machine",
+      "portal_auth_method": "cas",
+      "portal_auth_source": "IDP",
+      "gateway_auth_method": "saml",
+      "gateway_auth_source": "IDP",
+      "saml_used": true,
+      "auth_cookie_used": true,
+      "certificate_requested": true,
+      "certificate_exchange_count": 3,
+      "portal_certificate_exchange_count": 2,
+      "gateway_certificate_exchange_count": 1,
+      "selected_identities": [
+        "local-rich-cross"
+      ],
+      "selected_identity_sequence": [
+        "local-rich-cross",
+        "local-rich-cross",
+        "local-rich-cross"
+      ],
+      "selected_identity_transition": [
+        "local-rich-cross"
+      ],
+      "portal_selected_identities": [
+        "local-rich-cross"
+      ],
+      "gateway_selected_identities": [
+        "local-rich-cross"
+      ],
+      "selected_identity_stores": [
+        "user"
+      ],
+      "initial_selected_identity": "local-rich-cross",
+      "initial_selected_identity_store": "user",
+      "initial_selected_identity_status": "selected",
+      "final_portal_selected_identity": "local-rich-cross",
+      "final_portal_selected_identity_store": "user",
+      "final_gateway_selected_identity": "local-rich-cross",
+      "final_gateway_selected_identity_store": "user",
+      "successful_path_certificate_identity": "local-rich-cross",
+      "successful_path_certificate_store": "user",
+      "successful_path_certificate_phase": "gateway",
+      "successful_machine_certificate": false,
+      "successful_user_certificate": true,
+      "machine_certificate_selection_attempted": false,
+      "user_certificate_selection_attempted": true,
+      "machine_certificate_selected": false,
+      "user_certificate_selected": true,
+      "client_certificate_write_count": 1,
+      "tunnel_connected": true,
+      "auth_failures": [],
+      "certificate_selection_failures": [],
+      "warnings": [],
+      "certificate_exchanges": [
+        {
+          "phase": "portal",
+          "timestamp": "2026-07-16 19:42:28.919",
+          "source": "PanGPS.log:25947",
+          "thread_id": "20739",
+          "user_identities": [
+            "local-rich-cross"
+          ],
+          "system_identities": [
+            "rich-mac"
+          ],
+          "matching_identity_count": 1,
+          "selected_identity": "local-rich-cross",
+          "selected_store": "user",
+          "selection_status": "selected",
+          "selection_error": null,
+          "keychain_locked": false
+        },
+        {
+          "phase": "portal",
+          "timestamp": "2026-07-16 19:43:49.435",
+          "source": "PanGPS.log:26333",
+          "thread_id": "27051",
+          "user_identities": [],
+          "system_identities": [],
+          "matching_identity_count": null,
+          "selected_identity": "local-rich-cross",
+          "selected_store": "user",
+          "selection_status": "selected",
+          "selection_error": null,
+          "keychain_locked": false
+        },
+        {
+          "phase": "gateway",
+          "timestamp": "2026-07-16 19:43:54.725",
+          "source": "PanGPS.log:27739",
+          "thread_id": "27891",
+          "user_identities": [
+            "local-rich-cross"
+          ],
+          "system_identities": [
+            "rich-mac"
+          ],
+          "matching_identity_count": 1,
+          "selected_identity": "local-rich-cross",
+          "selected_store": "user",
+          "selection_status": "selected",
+          "selection_error": null,
+          "keychain_locked": false
+        }
+      ],
+      "timeline": [
+        {
+          "timestamp": "2026-07-16 19:42:28.599",
+          "phase": "portal",
+          "event": "Portal connection request received",
+          "source": "PanGPS.log:25759"
+        },
+        {
+          "timestamp": "2026-07-16 19:42:28.722",
+          "phase": "portal",
+          "event": "State: Retrieving configuration",
+          "source": "PanGPS.log:25855"
+        },
+        {
+          "timestamp": "2026-07-16 19:42:28.919",
+          "phase": "portal",
+          "event": "Server requested a client certificate",
+          "source": "PanGPS.log:25947"
+        },
+        {
+          "timestamp": "2026-07-16 19:42:28.924",
+          "phase": "portal",
+          "event": "User identity available: local-rich-cross",
+          "source": "PanGPS.log:25963"
+        },
+        {
+          "timestamp": "2026-07-16 19:42:28.924",
+          "phase": "portal",
+          "event": "Machine identity available: rich-mac",
+          "source": "PanGPS.log:25965"
+        },
+        {
+          "timestamp": "2026-07-16 19:42:28.924",
+          "phase": "portal",
+          "event": "Matching certificate identities: 1",
+          "source": "PanGPS.log:25991"
+        },
+        {
+          "timestamp": "2026-07-16 19:42:28.926",
+          "phase": "portal",
+          "event": "Selected certificate identity: local-rich-cross (user)",
+          "source": "PanGPS.log:25994"
+        },
+        {
+          "timestamp": "2026-07-16 19:42:30.101",
+          "phase": "portal",
+          "event": "Waiting for SAML authentication response",
+          "source": "PanGPS.log:26054"
+        },
+        {
+          "timestamp": "2026-07-16 19:43:49.124",
+          "phase": "portal",
+          "event": "Portal message continuation",
+          "source": "PanGPS.log:26099"
+        },
+        {
+          "timestamp": "2026-07-16 19:43:49.304",
+          "phase": "portal",
+          "event": "State: Retrieving configuration",
+          "source": "PanGPS.log:26192"
+        },
+        {
+          "timestamp": "2026-07-16 19:43:49.344",
+          "phase": "portal",
+          "event": "Existing authentication cookie loaded",
+          "source": "PanGPS.log:26262"
+        },
+        {
+          "timestamp": "2026-07-16 19:43:49.344",
+          "phase": "portal",
+          "event": "Existing authentication cookie loaded",
+          "source": "PanGPS.log:26272"
+        },
+        {
+          "timestamp": "2026-07-16 19:43:49.344",
+          "phase": "portal",
+          "event": "Portal authentication: cas via IDP",
+          "source": "PanGPS.log:26294"
+        },
+        {
+          "timestamp": "2026-07-16 19:43:49.435",
+          "phase": "portal",
+          "event": "Server requested a client certificate",
+          "source": "PanGPS.log:26333"
+        },
+        {
+          "timestamp": "2026-07-16 19:43:49.437",
+          "phase": "portal",
+          "event": "Selected certificate identity: local-rich-cross (user)",
+          "source": "PanGPS.log:26336"
+        },
+        {
+          "timestamp": "2026-07-16 19:43:52.139",
+          "phase": "portal",
+          "event": "Certificate store lookup: user-and-machine",
+          "source": "PanGPS.log:26832"
+        },
+        {
+          "timestamp": "2026-07-16 19:43:54.649",
+          "phase": "gateway",
+          "event": "TLS client certificate written",
+          "source": "PanGPS.log:27670"
+        },
+        {
+          "timestamp": "2026-07-16 19:43:54.725",
+          "phase": "gateway",
+          "event": "Server requested a client certificate",
+          "source": "PanGPS.log:27739"
+        },
+        {
+          "timestamp": "2026-07-16 19:43:54.727",
+          "phase": "gateway",
+          "event": "User identity available: local-rich-cross",
+          "source": "PanGPS.log:27755"
+        },
+        {
+          "timestamp": "2026-07-16 19:43:54.727",
+          "phase": "gateway",
+          "event": "Machine identity available: rich-mac",
+          "source": "PanGPS.log:27757"
+        },
+        {
+          "timestamp": "2026-07-16 19:43:54.727",
+          "phase": "gateway",
+          "event": "Matching certificate identities: 1",
+          "source": "PanGPS.log:27783"
+        },
+        {
+          "timestamp": "2026-07-16 19:43:54.727",
+          "phase": "gateway",
+          "event": "Selected certificate identity: local-rich-cross (user)",
+          "source": "PanGPS.log:27786"
+        },
+        {
+          "timestamp": "2026-07-16 19:43:54.801",
+          "phase": "gateway",
+          "event": "Existing authentication cookie loaded",
+          "source": "PanGPS.log:27852"
+        },
+        {
+          "timestamp": "2026-07-16 19:43:54.801",
+          "phase": "gateway",
+          "event": "Existing authentication cookie loaded",
+          "source": "PanGPS.log:27876"
+        },
+        {
+          "timestamp": "2026-07-16 19:43:54.801",
+          "phase": "gateway",
+          "event": "Existing authentication cookie loaded",
+          "source": "PanGPS.log:27877"
+        },
+        {
+          "timestamp": "2026-07-16 19:43:54.801",
+          "phase": "gateway",
+          "event": "Gateway authentication: saml via IDP",
+          "source": "PanGPS.log:27879"
+        },
+        {
+          "timestamp": "2026-07-16 19:43:54.852",
+          "phase": "gateway",
+          "event": "State: Connecting",
+          "source": "PanGPS.log:27940"
+        },
+        {
+          "timestamp": "2026-07-16 19:43:54.935",
+          "phase": "gateway",
+          "event": "Tunnel connected to 100.50.81.108",
+          "source": "PanGPS.log:28162"
+        },
+        {
+          "timestamp": "2026-07-16 19:43:55.022",
+          "phase": "gateway",
+          "event": "VPN tunnel connected",
+          "source": "PanGPS.log:28762"
+        },
+        {
+          "timestamp": "2026-07-16 19:43:55.030",
+          "phase": "gateway",
+          "event": "State: Connected",
+          "source": "PanGPS.log:28769"
+        }
+      ],
+      "start_source": "PanGPS.log:25759"
+    },
+    {
+      "attempt_id": 29,
+      "start_time": "2026-07-16 20:25:06.891",
+      "end_time": "2026-07-16 20:25:59.289",
+      "end_source": "PanGPS.log:33574",
+      "duration_seconds": 52.398,
+      "status": "connected",
+      "connected_after_retry": true,
+      "certificate_selection_recovered": false,
+      "portal": "globalprotect.wei-aws-lab.com",
+      "gateway": "globalprotect.wei-aws-lab.com",
+      "gateway_ip": "100.50.81.108",
+      "username": "richardcross",
+      "mode": "On-Demand",
+      "certificate_store_lookup": "user-and-machine",
+      "portal_auth_method": "cas",
+      "portal_auth_source": "IDP",
+      "gateway_auth_method": "saml",
+      "gateway_auth_source": "IDP",
+      "saml_used": true,
+      "auth_cookie_used": true,
+      "certificate_requested": true,
+      "certificate_exchange_count": 3,
+      "portal_certificate_exchange_count": 2,
+      "gateway_certificate_exchange_count": 1,
+      "selected_identities": [
+        "local-rich-cross"
+      ],
+      "selected_identity_sequence": [
+        "local-rich-cross",
+        "local-rich-cross",
+        "local-rich-cross"
+      ],
+      "selected_identity_transition": [
+        "local-rich-cross"
+      ],
+      "portal_selected_identities": [
+        "local-rich-cross"
+      ],
+      "gateway_selected_identities": [
+        "local-rich-cross"
+      ],
+      "selected_identity_stores": [
+        "user"
+      ],
+      "initial_selected_identity": "local-rich-cross",
+      "initial_selected_identity_store": "user",
+      "initial_selected_identity_status": "selected",
+      "final_portal_selected_identity": "local-rich-cross",
+      "final_portal_selected_identity_store": "user",
+      "final_gateway_selected_identity": "local-rich-cross",
+      "final_gateway_selected_identity_store": "user",
+      "successful_path_certificate_identity": "local-rich-cross",
+      "successful_path_certificate_store": "user",
+      "successful_path_certificate_phase": "gateway",
+      "successful_machine_certificate": false,
+      "successful_user_certificate": true,
+      "machine_certificate_selection_attempted": false,
+      "user_certificate_selection_attempted": true,
+      "machine_certificate_selected": false,
+      "user_certificate_selected": true,
+      "client_certificate_write_count": 1,
+      "tunnel_connected": true,
+      "auth_failures": [
+        "Auth failed empty password for gateway globalprotect.wei-aws-lab.com",
+        "msgtype = invalid-gateway-credential"
+      ],
+      "certificate_selection_failures": [],
+      "warnings": [],
+      "certificate_exchanges": [
+        {
+          "phase": "portal",
+          "timestamp": "2026-07-16 20:25:07.437",
+          "source": "PanGPS.log:30230",
+          "thread_id": "28511",
+          "user_identities": [
+            "local-rich-cross"
+          ],
+          "system_identities": [
+            "rich-mac"
+          ],
+          "matching_identity_count": 1,
+          "selected_identity": "local-rich-cross",
+          "selected_store": "user",
+          "selection_status": "selected",
+          "selection_error": null,
+          "keychain_locked": false
+        },
+        {
+          "phase": "portal",
+          "timestamp": "2026-07-16 20:25:37.755",
+          "source": "PanGPS.log:30909",
+          "thread_id": "24223",
+          "user_identities": [],
+          "system_identities": [],
+          "matching_identity_count": null,
+          "selected_identity": "local-rich-cross",
+          "selected_store": "user",
+          "selection_status": "selected",
+          "selection_error": null,
+          "keychain_locked": false
+        },
+        {
+          "phase": "gateway",
+          "timestamp": "2026-07-16 20:25:43.850",
+          "source": "PanGPS.log:32099",
+          "thread_id": "24943",
+          "user_identities": [
+            "local-rich-cross"
+          ],
+          "system_identities": [
+            "rich-mac"
+          ],
+          "matching_identity_count": 1,
+          "selected_identity": "local-rich-cross",
+          "selected_store": "user",
+          "selection_status": "selected",
+          "selection_error": null,
+          "keychain_locked": false
+        }
+      ],
+      "timeline": [
+        {
+          "timestamp": "2026-07-16 20:25:06.891",
+          "phase": "portal",
+          "event": "Portal connection request received",
+          "source": "PanGPS.log:30039"
+        },
+        {
+          "timestamp": "2026-07-16 20:25:07.076",
+          "phase": "portal",
+          "event": "State: Retrieving configuration",
+          "source": "PanGPS.log:30136"
+        },
+        {
+          "timestamp": "2026-07-16 20:25:07.437",
+          "phase": "portal",
+          "event": "Server requested a client certificate",
+          "source": "PanGPS.log:30230"
+        },
+        {
+          "timestamp": "2026-07-16 20:25:07.442",
+          "phase": "portal",
+          "event": "User identity available: local-rich-cross",
+          "source": "PanGPS.log:30246"
+        },
+        {
+          "timestamp": "2026-07-16 20:25:07.442",
+          "phase": "portal",
+          "event": "Machine identity available: rich-mac",
+          "source": "PanGPS.log:30248"
+        },
+        {
+          "timestamp": "2026-07-16 20:25:07.442",
+          "phase": "portal",
+          "event": "Matching certificate identities: 1",
+          "source": "PanGPS.log:30274"
+        },
+        {
+          "timestamp": "2026-07-16 20:25:07.444",
+          "phase": "portal",
+          "event": "Selected certificate identity: local-rich-cross (user)",
+          "source": "PanGPS.log:30277"
+        },
+        {
+          "timestamp": "2026-07-16 20:25:08.566",
+          "phase": "portal",
+          "event": "Waiting for SAML authentication response",
+          "source": "PanGPS.log:30361"
+        },
+        {
+          "timestamp": "2026-07-16 20:25:37.510",
+          "phase": "portal",
+          "event": "Portal message continuation",
+          "source": "PanGPS.log:30674"
+        },
+        {
+          "timestamp": "2026-07-16 20:25:37.625",
+          "phase": "portal",
+          "event": "State: Retrieving configuration",
+          "source": "PanGPS.log:30768"
+        },
+        {
+          "timestamp": "2026-07-16 20:25:37.665",
+          "phase": "portal",
+          "event": "Existing authentication cookie loaded",
+          "source": "PanGPS.log:30838"
+        },
+        {
+          "timestamp": "2026-07-16 20:25:37.665",
+          "phase": "portal",
+          "event": "Existing authentication cookie loaded",
+          "source": "PanGPS.log:30848"
+        },
+        {
+          "timestamp": "2026-07-16 20:25:37.665",
+          "phase": "portal",
+          "event": "Portal authentication: cas via IDP",
+          "source": "PanGPS.log:30870"
+        },
+        {
+          "timestamp": "2026-07-16 20:25:37.755",
+          "phase": "portal",
+          "event": "Server requested a client certificate",
+          "source": "PanGPS.log:30909"
+        },
+        {
+          "timestamp": "2026-07-16 20:25:37.756",
+          "phase": "portal",
+          "event": "Selected certificate identity: local-rich-cross (user)",
+          "source": "PanGPS.log:30912"
+        },
+        {
+          "timestamp": "2026-07-16 20:25:41.278",
+          "phase": "portal",
+          "event": "Certificate store lookup: user-and-machine",
+          "source": "PanGPS.log:31428"
+        },
+        {
+          "timestamp": "2026-07-16 20:25:43.770",
+          "phase": "gateway",
+          "event": "TLS client certificate written",
+          "source": "PanGPS.log:31660"
+        },
+        {
+          "timestamp": "2026-07-16 20:25:43.850",
+          "phase": "gateway",
+          "event": "Server requested a client certificate",
+          "source": "PanGPS.log:32099"
+        },
+        {
+          "timestamp": "2026-07-16 20:25:43.851",
+          "phase": "gateway",
+          "event": "User identity available: local-rich-cross",
+          "source": "PanGPS.log:32115"
+        },
+        {
+          "timestamp": "2026-07-16 20:25:43.851",
+          "phase": "gateway",
+          "event": "Machine identity available: rich-mac",
+          "source": "PanGPS.log:32117"
+        },
+        {
+          "timestamp": "2026-07-16 20:25:43.851",
+          "phase": "gateway",
+          "event": "Matching certificate identities: 1",
+          "source": "PanGPS.log:32143"
+        },
+        {
+          "timestamp": "2026-07-16 20:25:43.852",
+          "phase": "gateway",
+          "event": "Selected certificate identity: local-rich-cross (user)",
+          "source": "PanGPS.log:32146"
+        },
+        {
+          "timestamp": "2026-07-16 20:25:43.926",
+          "phase": "gateway",
+          "event": "Existing authentication cookie loaded",
+          "source": "PanGPS.log:32212"
+        },
+        {
+          "timestamp": "2026-07-16 20:25:43.926",
+          "phase": "gateway",
+          "event": "Existing authentication cookie loaded",
+          "source": "PanGPS.log:32236"
+        },
+        {
+          "timestamp": "2026-07-16 20:25:43.926",
+          "phase": "gateway",
+          "event": "Existing authentication cookie loaded",
+          "source": "PanGPS.log:32237"
+        },
+        {
+          "timestamp": "2026-07-16 20:25:43.926",
+          "phase": "gateway",
+          "event": "Gateway authentication: saml via IDP",
+          "source": "PanGPS.log:32239"
+        },
+        {
+          "timestamp": "2026-07-16 20:25:43.967",
+          "phase": "gateway",
+          "event": "Authentication issue: Auth failed empty password for gateway globalprotect.wei-aws-lab.com",
+          "source": "PanGPS.log:32271"
+        },
+        {
+          "timestamp": "2026-07-16 20:25:43.967",
+          "phase": "gateway",
+          "event": "Waiting for SAML authentication response",
+          "source": "PanGPS.log:32273"
+        },
+        {
+          "timestamp": "2026-07-16 20:25:43.967",
+          "phase": "gateway",
+          "event": "Waiting for SAML authentication response",
+          "source": "PanGPS.log:32278"
+        },
+        {
+          "timestamp": "2026-07-16 20:25:59.023",
+          "phase": "gateway",
+          "event": "Authentication issue: msgtype = invalid-gateway-credential",
+          "source": "PanGPS.log:32356"
+        },
+        {
+          "timestamp": "2026-07-16 20:25:59.024",
+          "phase": "gateway",
+          "event": "Existing authentication cookie loaded",
+          "source": "PanGPS.log:32384"
+        },
+        {
+          "timestamp": "2026-07-16 20:25:59.024",
+          "phase": "gateway",
+          "event": "Existing authentication cookie loaded",
+          "source": "PanGPS.log:32394"
+        },
+        {
+          "timestamp": "2026-07-16 20:25:59.024",
+          "phase": "gateway",
+          "event": "Existing authentication cookie loaded",
+          "source": "PanGPS.log:32395"
+        },
+        {
+          "timestamp": "2026-07-16 20:25:59.024",
+          "phase": "gateway",
+          "event": "Gateway authentication: saml via IDP",
+          "source": "PanGPS.log:32397"
+        },
+        {
+          "timestamp": "2026-07-16 20:25:59.094",
+          "phase": "gateway",
+          "event": "State: Connecting",
+          "source": "PanGPS.log:32739"
+        },
+        {
+          "timestamp": "2026-07-16 20:25:59.178",
+          "phase": "gateway",
+          "event": "Tunnel connected to 100.50.81.108",
+          "source": "PanGPS.log:32959"
+        },
+        {
+          "timestamp": "2026-07-16 20:25:59.281",
+          "phase": "gateway",
+          "event": "VPN tunnel connected",
+          "source": "PanGPS.log:33566"
+        },
+        {
+          "timestamp": "2026-07-16 20:25:59.289",
+          "phase": "gateway",
+          "event": "State: Connected",
+          "source": "PanGPS.log:33574"
+        }
+      ],
+      "start_source": "PanGPS.log:30039"
+    },
+    {
+      "attempt_id": 30,
+      "start_time": "2026-07-16 20:52:10.890",
+      "end_time": "2026-07-16 20:58:36.926",
+      "end_source": "PanGPS.log:46462",
+      "duration_seconds": 386.036,
+      "status": "connected",
+      "connected_after_retry": true,
+      "certificate_selection_recovered": true,
+      "portal": "globalprotect.wei-aws-lab.com",
+      "gateway": "globalprotect.wei-aws-lab.com",
+      "gateway_ip": "100.50.81.108",
+      "username": "richardcross",
+      "mode": "On-Demand",
+      "certificate_store_lookup": "machine",
+      "portal_auth_method": "cas",
+      "portal_auth_source": "IDP",
+      "gateway_auth_method": "saml",
+      "gateway_auth_source": "IDP",
+      "saml_used": true,
+      "auth_cookie_used": true,
+      "certificate_requested": true,
+      "certificate_exchange_count": 10,
+      "portal_certificate_exchange_count": 5,
+      "gateway_certificate_exchange_count": 5,
+      "selected_identities": [
+        "local-rich-cross",
+        "rich-mac"
+      ],
+      "selected_identity_sequence": [
+        "local-rich-cross",
+        "local-rich-cross",
+        "rich-mac",
+        "rich-mac",
+        "rich-mac",
+        "rich-mac",
+        "rich-mac",
+        "rich-mac",
+        "rich-mac",
+        "rich-mac"
+      ],
+      "selected_identity_transition": [
+        "local-rich-cross",
+        "rich-mac"
+      ],
+      "portal_selected_identities": [
+        "local-rich-cross",
+        "rich-mac"
+      ],
+      "gateway_selected_identities": [
+        "rich-mac"
+      ],
+      "selected_identity_stores": [
+        "user",
+        "machine"
+      ],
+      "initial_selected_identity": "local-rich-cross",
+      "initial_selected_identity_store": "user",
+      "initial_selected_identity_status": "selected",
+      "final_portal_selected_identity": "rich-mac",
+      "final_portal_selected_identity_store": "machine",
+      "final_gateway_selected_identity": "rich-mac",
+      "final_gateway_selected_identity_store": "machine",
+      "successful_path_certificate_identity": "rich-mac",
+      "successful_path_certificate_store": "machine",
+      "successful_path_certificate_phase": "gateway",
+      "successful_machine_certificate": true,
+      "successful_user_certificate": false,
+      "machine_certificate_selection_attempted": true,
+      "user_certificate_selection_attempted": true,
+      "machine_certificate_selected": true,
+      "user_certificate_selected": true,
+      "client_certificate_write_count": 3,
+      "tunnel_connected": true,
+      "auth_failures": [
+        "Auth failed empty password for gateway globalprotect.wei-aws-lab.com",
+        "msgtype = invalid-gateway-credential"
+      ],
+      "certificate_selection_failures": [
+        "gateway identity rich-mac: system keychain identity was locked"
+      ],
+      "warnings": [
+        "Certificate identity rich-mac could not be used because its keychain was locked"
+      ],
+      "certificate_exchanges": [
+        {
+          "phase": "portal",
+          "timestamp": "2026-07-16 20:52:11.379",
+          "source": "PanGPS.log:38227",
+          "thread_id": "20363",
+          "user_identities": [
+            "local-rich-cross"
+          ],
+          "system_identities": [
+            "rich-mac"
+          ],
+          "matching_identity_count": 1,
+          "selected_identity": "local-rich-cross",
+          "selected_store": "user",
+          "selection_status": "selected",
+          "selection_error": null,
+          "keychain_locked": false
+        },
+        {
+          "phase": "portal",
+          "timestamp": "2026-07-16 20:52:53.821",
+          "source": "PanGPS.log:38614",
+          "thread_id": "24307",
+          "user_identities": [],
+          "system_identities": [],
+          "matching_identity_count": null,
+          "selected_identity": "local-rich-cross",
+          "selected_store": "user",
+          "selection_status": "selected",
+          "selection_error": null,
+          "keychain_locked": false
+        },
+        {
+          "phase": "gateway",
+          "timestamp": "2026-07-16 20:52:58.969",
+          "source": "PanGPS.log:40009",
+          "thread_id": "25283",
+          "user_identities": [
+            "local-rich-cross"
+          ],
+          "system_identities": [
+            "rich-mac"
+          ],
+          "matching_identity_count": 1,
+          "selected_identity": "rich-mac",
+          "selected_store": "machine",
+          "selection_status": "unusable",
+          "selection_error": "system keychain identity was locked",
+          "keychain_locked": true
+        },
+        {
+          "phase": "gateway",
+          "timestamp": "2026-07-16 20:53:07.343",
+          "source": "PanGPS.log:40169",
+          "thread_id": "27331",
+          "user_identities": [],
+          "system_identities": [],
+          "matching_identity_count": null,
+          "selected_identity": "rich-mac",
+          "selected_store": "machine",
+          "selection_status": "selected",
+          "selection_error": null,
+          "keychain_locked": false
+        },
+        {
+          "phase": "gateway",
+          "timestamp": "2026-07-16 20:54:18.273",
+          "source": "PanGPS.log:40491",
+          "thread_id": "17347",
+          "user_identities": [],
+          "system_identities": [],
+          "matching_identity_count": null,
+          "selected_identity": "rich-mac",
+          "selected_store": "machine",
+          "selection_status": "selected",
+          "selection_error": null,
+          "keychain_locked": false
+        },
+        {
+          "phase": "portal",
+          "timestamp": "2026-07-16 20:54:37.366",
+          "source": "PanGPS.log:40755",
+          "thread_id": "27147",
+          "user_identities": [
+            "local-rich-cross"
+          ],
+          "system_identities": [
+            "rich-mac"
+          ],
+          "matching_identity_count": 1,
+          "selected_identity": "rich-mac",
+          "selected_store": "machine",
+          "selection_status": "selected",
+          "selection_error": null,
+          "keychain_locked": false
+        },
+        {
+          "phase": "portal",
+          "timestamp": "2026-07-16 20:55:47.232",
+          "source": "PanGPS.log:41161",
+          "thread_id": "26147",
+          "user_identities": [
+            "local-rich-cross"
+          ],
+          "system_identities": [
+            "rich-mac"
+          ],
+          "matching_identity_count": 1,
+          "selected_identity": "rich-mac",
+          "selected_store": "machine",
+          "selection_status": "selected",
+          "selection_error": null,
+          "keychain_locked": false
+        },
+        {
+          "phase": "portal",
+          "timestamp": "2026-07-16 20:57:52.583",
+          "source": "PanGPS.log:41530",
+          "thread_id": "25331",
+          "user_identities": [
+            "local-rich-cross"
+          ],
+          "system_identities": [
+            "rich-mac"
+          ],
+          "matching_identity_count": 1,
+          "selected_identity": "rich-mac",
+          "selected_store": "machine",
+          "selection_status": "selected",
+          "selection_error": null,
+          "keychain_locked": false
+        },
+        {
+          "phase": "gateway",
+          "timestamp": "2026-07-16 20:58:12.627",
+          "source": "PanGPS.log:43284",
+          "thread_id": "32995",
+          "user_identities": [
+            "local-rich-cross"
+          ],
+          "system_identities": [
+            "rich-mac"
+          ],
+          "matching_identity_count": 1,
+          "selected_identity": "rich-mac",
+          "selected_store": "machine",
+          "selection_status": "selected",
+          "selection_error": null,
+          "keychain_locked": false
+        },
+        {
+          "phase": "gateway",
+          "timestamp": "2026-07-16 20:58:26.627",
+          "source": "PanGPS.log:44988",
+          "thread_id": "43347",
+          "user_identities": [
+            "local-rich-cross"
+          ],
+          "system_identities": [
+            "rich-mac"
+          ],
+          "matching_identity_count": 1,
+          "selected_identity": "rich-mac",
+          "selected_store": "machine",
+          "selection_status": "selected",
+          "selection_error": null,
+          "keychain_locked": false
+        }
+      ],
+      "timeline": [
+        {
+          "timestamp": "2026-07-16 20:52:10.890",
+          "phase": "portal",
+          "event": "Portal connection request received",
+          "source": "PanGPS.log:38035"
+        },
+        {
+          "timestamp": "2026-07-16 20:52:11.184",
+          "phase": "portal",
+          "event": "State: Retrieving configuration",
+          "source": "PanGPS.log:38135"
+        },
+        {
+          "timestamp": "2026-07-16 20:52:11.379",
+          "phase": "portal",
+          "event": "Server requested a client certificate",
+          "source": "PanGPS.log:38227"
+        },
+        {
+          "timestamp": "2026-07-16 20:52:11.385",
+          "phase": "portal",
+          "event": "User identity available: local-rich-cross",
+          "source": "PanGPS.log:38243"
+        },
+        {
+          "timestamp": "2026-07-16 20:52:11.385",
+          "phase": "portal",
+          "event": "Machine identity available: rich-mac",
+          "source": "PanGPS.log:38245"
+        },
+        {
+          "timestamp": "2026-07-16 20:52:11.386",
+          "phase": "portal",
+          "event": "Matching certificate identities: 1",
+          "source": "PanGPS.log:38271"
+        },
+        {
+          "timestamp": "2026-07-16 20:52:11.387",
+          "phase": "portal",
+          "event": "Selected certificate identity: local-rich-cross (user)",
+          "source": "PanGPS.log:38274"
+        },
+        {
+          "timestamp": "2026-07-16 20:52:12.514",
+          "phase": "portal",
+          "event": "Waiting for SAML authentication response",
+          "source": "PanGPS.log:38334"
+        },
+        {
+          "timestamp": "2026-07-16 20:52:53.504",
+          "phase": "portal",
+          "event": "Portal message continuation",
+          "source": "PanGPS.log:38379"
+        },
+        {
+          "timestamp": "2026-07-16 20:52:53.682",
+          "phase": "portal",
+          "event": "State: Retrieving configuration",
+          "source": "PanGPS.log:38473"
+        },
+        {
+          "timestamp": "2026-07-16 20:52:53.721",
+          "phase": "portal",
+          "event": "Existing authentication cookie loaded",
+          "source": "PanGPS.log:38543"
+        },
+        {
+          "timestamp": "2026-07-16 20:52:53.721",
+          "phase": "portal",
+          "event": "Existing authentication cookie loaded",
+          "source": "PanGPS.log:38553"
+        },
+        {
+          "timestamp": "2026-07-16 20:52:53.721",
+          "phase": "portal",
+          "event": "Portal authentication: cas via IDP",
+          "source": "PanGPS.log:38575"
+        },
+        {
+          "timestamp": "2026-07-16 20:52:53.821",
+          "phase": "portal",
+          "event": "Server requested a client certificate",
+          "source": "PanGPS.log:38614"
+        },
+        {
+          "timestamp": "2026-07-16 20:52:53.823",
+          "phase": "portal",
+          "event": "Selected certificate identity: local-rich-cross (user)",
+          "source": "PanGPS.log:38617"
+        },
+        {
+          "timestamp": "2026-07-16 20:52:56.358",
+          "phase": "portal",
+          "event": "Certificate store lookup: machine",
+          "source": "PanGPS.log:39102"
+        },
+        {
+          "timestamp": "2026-07-16 20:52:58.893",
+          "phase": "gateway",
+          "event": "TLS client certificate written",
+          "source": "PanGPS.log:39940"
+        },
+        {
+          "timestamp": "2026-07-16 20:52:58.969",
+          "phase": "gateway",
+          "event": "Server requested a client certificate",
+          "source": "PanGPS.log:40009"
+        },
+        {
+          "timestamp": "2026-07-16 20:52:58.970",
+          "phase": "gateway",
+          "event": "User identity available: local-rich-cross",
+          "source": "PanGPS.log:40025"
+        },
+        {
+          "timestamp": "2026-07-16 20:52:58.970",
+          "phase": "gateway",
+          "event": "Machine identity available: rich-mac",
+          "source": "PanGPS.log:40027"
+        },
+        {
+          "timestamp": "2026-07-16 20:52:58.970",
+          "phase": "gateway",
+          "event": "Matching certificate identities: 1",
+          "source": "PanGPS.log:40053"
+        },
+        {
+          "timestamp": "2026-07-16 20:52:58.970",
+          "phase": "gateway",
+          "event": "Selected certificate identity: rich-mac (machine)",
+          "source": "PanGPS.log:40056"
+        },
+        {
+          "timestamp": "2026-07-16 20:52:59.971",
+          "phase": "gateway",
+          "event": "Certificate identity rich-mac could not be used because its keychain was locked",
+          "source": "PanGPS.log:40064"
+        },
+        {
+          "timestamp": "2026-07-16 20:52:59.971",
+          "phase": "gateway",
+          "event": "Certificate identity rich-mac was rejected",
+          "source": "PanGPS.log:40065"
+        },
+        {
+          "timestamp": "2026-07-16 20:53:07.343",
+          "phase": "gateway",
+          "event": "Server requested a client certificate",
+          "source": "PanGPS.log:40169"
+        },
+        {
+          "timestamp": "2026-07-16 20:53:07.344",
+          "phase": "gateway",
+          "event": "Selected certificate identity: rich-mac (machine)",
+          "source": "PanGPS.log:40172"
+        },
+        {
+          "timestamp": "2026-07-16 20:53:14.830",
+          "phase": "gateway",
+          "event": "Existing authentication cookie loaded",
+          "source": "PanGPS.log:40236"
+        },
+        {
+          "timestamp": "2026-07-16 20:53:14.830",
+          "phase": "gateway",
+          "event": "Existing authentication cookie loaded",
+          "source": "PanGPS.log:40260"
+        },
+        {
+          "timestamp": "2026-07-16 20:53:14.830",
+          "phase": "gateway",
+          "event": "Existing authentication cookie loaded",
+          "source": "PanGPS.log:40261"
+        },
+        {
+          "timestamp": "2026-07-16 20:53:14.830",
+          "phase": "gateway",
+          "event": "Gateway authentication: saml via IDP",
+          "source": "PanGPS.log:40263"
+        },
+        {
+          "timestamp": "2026-07-16 20:53:14.831",
+          "phase": "gateway",
+          "event": "Existing authentication cookie loaded",
+          "source": "PanGPS.log:40270"
+        },
+        {
+          "timestamp": "2026-07-16 20:53:14.831",
+          "phase": "gateway",
+          "event": "Existing authentication cookie loaded",
+          "source": "PanGPS.log:40280"
+        },
+        {
+          "timestamp": "2026-07-16 20:53:14.879",
+          "phase": "gateway",
+          "event": "Authentication issue: Auth failed empty password for gateway globalprotect.wei-aws-lab.com",
+          "source": "PanGPS.log:40295"
+        },
+        {
+          "timestamp": "2026-07-16 20:53:14.879",
+          "phase": "gateway",
+          "event": "Waiting for SAML authentication response",
+          "source": "PanGPS.log:40297"
+        },
+        {
+          "timestamp": "2026-07-16 20:53:14.881",
+          "phase": "gateway",
+          "event": "Waiting for SAML authentication response",
+          "source": "PanGPS.log:40302"
+        },
+        {
+          "timestamp": "2026-07-16 20:54:18.184",
+          "phase": "gateway",
+          "event": "Authentication issue: msgtype = invalid-gateway-credential",
+          "source": "PanGPS.log:40352"
+        },
+        {
+          "timestamp": "2026-07-16 20:54:18.184",
+          "phase": "gateway",
+          "event": "Existing authentication cookie loaded",
+          "source": "PanGPS.log:40380"
+        },
+        {
+          "timestamp": "2026-07-16 20:54:18.184",
+          "phase": "gateway",
+          "event": "Existing authentication cookie loaded",
+          "source": "PanGPS.log:40390"
+        },
+        {
+          "timestamp": "2026-07-16 20:54:18.184",
+          "phase": "gateway",
+          "event": "Existing authentication cookie loaded",
+          "source": "PanGPS.log:40391"
+        },
+        {
+          "timestamp": "2026-07-16 20:54:18.184",
+          "phase": "gateway",
+          "event": "Gateway authentication: saml via IDP",
+          "source": "PanGPS.log:40393"
+        },
+        {
+          "timestamp": "2026-07-16 20:54:18.185",
+          "phase": "gateway",
+          "event": "Existing authentication cookie loaded",
+          "source": "PanGPS.log:40400"
+        },
+        {
+          "timestamp": "2026-07-16 20:54:18.185",
+          "phase": "gateway",
+          "event": "Existing authentication cookie loaded",
+          "source": "PanGPS.log:40410"
+        },
+        {
+          "timestamp": "2026-07-16 20:54:18.273",
+          "phase": "gateway",
+          "event": "Server requested a client certificate",
+          "source": "PanGPS.log:40491"
+        },
+        {
+          "timestamp": "2026-07-16 20:54:18.274",
+          "phase": "gateway",
+          "event": "Selected certificate identity: rich-mac (machine)",
+          "source": "PanGPS.log:40494"
+        },
+        {
+          "timestamp": "2026-07-16 20:54:28.389",
+          "phase": "gateway",
+          "event": "Gateway authentication: saml via IDP",
+          "source": "PanGPS.log:40509"
+        },
+        {
+          "timestamp": "2026-07-16 20:54:28.389",
+          "phase": "gateway",
+          "event": "State: Disconnected",
+          "source": "PanGPS.log:40516"
+        },
+        {
+          "timestamp": "2026-07-16 20:54:37.049",
+          "phase": "portal",
+          "event": "Portal message continuation",
+          "source": "PanGPS.log:40567"
+        },
+        {
+          "timestamp": "2026-07-16 20:54:37.233",
+          "phase": "portal",
+          "event": "State: Retrieving configuration",
+          "source": "PanGPS.log:40663"
+        },
+        {
+          "timestamp": "2026-07-16 20:54:37.366",
+          "phase": "portal",
+          "event": "Server requested a client certificate",
+          "source": "PanGPS.log:40755"
+        },
+        {
+          "timestamp": "2026-07-16 20:54:37.370",
+          "phase": "portal",
+          "event": "User identity available: local-rich-cross",
+          "source": "PanGPS.log:40771"
+        },
+        {
+          "timestamp": "2026-07-16 20:54:37.371",
+          "phase": "portal",
+          "event": "Machine identity available: rich-mac",
+          "source": "PanGPS.log:40773"
+        },
+        {
+          "timestamp": "2026-07-16 20:54:37.371",
+          "phase": "portal",
+          "event": "Matching certificate identities: 1",
+          "source": "PanGPS.log:40799"
+        },
+        {
+          "timestamp": "2026-07-16 20:54:37.372",
+          "phase": "portal",
+          "event": "Selected certificate identity: rich-mac (machine)",
+          "source": "PanGPS.log:40802"
+        },
+        {
+          "timestamp": "2026-07-16 20:54:50.130",
+          "phase": "portal",
+          "event": "Waiting for SAML authentication response",
+          "source": "PanGPS.log:40862"
+        },
+        {
+          "timestamp": "2026-07-16 20:55:41.021",
+          "phase": "portal",
+          "event": "State: Disconnected",
+          "source": "PanGPS.log:40911"
+        },
+        {
+          "timestamp": "2026-07-16 20:55:46.919",
+          "phase": "portal",
+          "event": "Portal message continuation",
+          "source": "PanGPS.log:40970"
+        },
+        {
+          "timestamp": "2026-07-16 20:55:47.106",
+          "phase": "portal",
+          "event": "State: Retrieving configuration",
+          "source": "PanGPS.log:41069"
+        },
+        {
+          "timestamp": "2026-07-16 20:55:47.232",
+          "phase": "portal",
+          "event": "Server requested a client certificate",
+          "source": "PanGPS.log:41161"
+        },
+        {
+          "timestamp": "2026-07-16 20:55:47.236",
+          "phase": "portal",
+          "event": "User identity available: local-rich-cross",
+          "source": "PanGPS.log:41177"
+        },
+        {
+          "timestamp": "2026-07-16 20:55:47.236",
+          "phase": "portal",
+          "event": "Machine identity available: rich-mac",
+          "source": "PanGPS.log:41179"
+        },
+        {
+          "timestamp": "2026-07-16 20:55:47.236",
+          "phase": "portal",
+          "event": "Matching certificate identities: 1",
+          "source": "PanGPS.log:41205"
+        },
+        {
+          "timestamp": "2026-07-16 20:55:47.237",
+          "phase": "portal",
+          "event": "Selected certificate identity: rich-mac (machine)",
+          "source": "PanGPS.log:41208"
+        },
+        {
+          "timestamp": "2026-07-16 20:56:17.419",
+          "phase": "portal",
+          "event": "Waiting for SAML authentication response",
+          "source": "PanGPS.log:41233"
+        },
+        {
+          "timestamp": "2026-07-16 20:57:47.936",
+          "phase": "portal",
+          "event": "State: Disconnected",
+          "source": "PanGPS.log:41283"
+        },
+        {
+          "timestamp": "2026-07-16 20:57:52.313",
+          "phase": "portal",
+          "event": "Portal message continuation",
+          "source": "PanGPS.log:41342"
+        },
+        {
+          "timestamp": "2026-07-16 20:57:52.444",
+          "phase": "portal",
+          "event": "State: Retrieving configuration",
+          "source": "PanGPS.log:41438"
+        },
+        {
+          "timestamp": "2026-07-16 20:57:52.583",
+          "phase": "portal",
+          "event": "Server requested a client certificate",
+          "source": "PanGPS.log:41530"
+        },
+        {
+          "timestamp": "2026-07-16 20:57:52.587",
+          "phase": "portal",
+          "event": "User identity available: local-rich-cross",
+          "source": "PanGPS.log:41546"
+        },
+        {
+          "timestamp": "2026-07-16 20:57:52.587",
+          "phase": "portal",
+          "event": "Machine identity available: rich-mac",
+          "source": "PanGPS.log:41548"
+        },
+        {
+          "timestamp": "2026-07-16 20:57:52.587",
+          "phase": "portal",
+          "event": "Matching certificate identities: 1",
+          "source": "PanGPS.log:41574"
+        },
+        {
+          "timestamp": "2026-07-16 20:57:52.588",
+          "phase": "portal",
+          "event": "Selected certificate identity: rich-mac (machine)",
+          "source": "PanGPS.log:41577"
+        },
+        {
+          "timestamp": "2026-07-16 20:58:02.320",
+          "phase": "portal",
+          "event": "Waiting for SAML authentication response",
+          "source": "PanGPS.log:41637"
+        },
+        {
+          "timestamp": "2026-07-16 20:58:07.253",
+          "phase": "portal",
+          "event": "Portal message continuation",
+          "source": "PanGPS.log:41678"
+        },
+        {
+          "timestamp": "2026-07-16 20:58:07.436",
+          "phase": "portal",
+          "event": "State: Retrieving configuration",
+          "source": "PanGPS.log:41772"
+        },
+        {
+          "timestamp": "2026-07-16 20:58:07.474",
+          "phase": "portal",
+          "event": "Existing authentication cookie loaded",
+          "source": "PanGPS.log:41842"
+        },
+        {
+          "timestamp": "2026-07-16 20:58:07.474",
+          "phase": "portal",
+          "event": "Existing authentication cookie loaded",
+          "source": "PanGPS.log:41852"
+        },
+        {
+          "timestamp": "2026-07-16 20:58:07.474",
+          "phase": "portal",
+          "event": "Portal authentication: cas via IDP",
+          "source": "PanGPS.log:41874"
+        },
+        {
+          "timestamp": "2026-07-16 20:58:10.016",
+          "phase": "portal",
+          "event": "Certificate store lookup: machine",
+          "source": "PanGPS.log:42377"
+        },
+        {
+          "timestamp": "2026-07-16 20:58:12.545",
+          "phase": "gateway",
+          "event": "TLS client certificate written",
+          "source": "PanGPS.log:43215"
+        },
+        {
+          "timestamp": "2026-07-16 20:58:12.627",
+          "phase": "gateway",
+          "event": "Server requested a client certificate",
+          "source": "PanGPS.log:43284"
+        },
+        {
+          "timestamp": "2026-07-16 20:58:12.629",
+          "phase": "gateway",
+          "event": "User identity available: local-rich-cross",
+          "source": "PanGPS.log:43300"
+        },
+        {
+          "timestamp": "2026-07-16 20:58:12.629",
+          "phase": "gateway",
+          "event": "Machine identity available: rich-mac",
+          "source": "PanGPS.log:43302"
+        },
+        {
+          "timestamp": "2026-07-16 20:58:12.629",
+          "phase": "gateway",
+          "event": "Matching certificate identities: 1",
+          "source": "PanGPS.log:43328"
+        },
+        {
+          "timestamp": "2026-07-16 20:58:12.630",
+          "phase": "gateway",
+          "event": "Selected certificate identity: rich-mac (machine)",
+          "source": "PanGPS.log:43331"
+        },
+        {
+          "timestamp": "2026-07-16 20:58:12.986",
+          "phase": "portal",
+          "event": "Portal message continuation",
+          "source": "PanGPS.log:43333"
+        },
+        {
+          "timestamp": "2026-07-16 20:58:21.403",
+          "phase": "gateway",
+          "event": "Existing authentication cookie loaded",
+          "source": "PanGPS.log:43472"
+        },
+        {
+          "timestamp": "2026-07-16 20:58:21.404",
+          "phase": "gateway",
+          "event": "Existing authentication cookie loaded",
+          "source": "PanGPS.log:43486"
+        },
+        {
+          "timestamp": "2026-07-16 20:58:21.404",
+          "phase": "gateway",
+          "event": "Existing authentication cookie loaded",
+          "source": "PanGPS.log:43496"
+        },
+        {
+          "timestamp": "2026-07-16 20:58:21.404",
+          "phase": "gateway",
+          "event": "Existing authentication cookie loaded",
+          "source": "PanGPS.log:43497"
+        },
+        {
+          "timestamp": "2026-07-16 20:58:21.404",
+          "phase": "gateway",
+          "event": "Gateway authentication: saml via IDP",
+          "source": "PanGPS.log:43499"
+        },
+        {
+          "timestamp": "2026-07-16 20:58:21.451",
+          "phase": "gateway",
+          "event": "Authentication issue: Auth failed empty password for gateway globalprotect.wei-aws-lab.com",
+          "source": "PanGPS.log:43531"
+        },
+        {
+          "timestamp": "2026-07-16 20:58:21.451",
+          "phase": "gateway",
+          "event": "Waiting for SAML authentication response",
+          "source": "PanGPS.log:43533"
+        },
+        {
+          "timestamp": "2026-07-16 20:58:21.453",
+          "phase": "gateway",
+          "event": "Waiting for SAML authentication response",
+          "source": "PanGPS.log:43538"
+        },
+        {
+          "timestamp": "2026-07-16 20:58:21.453",
+          "phase": "gateway",
+          "event": "State: Disconnected",
+          "source": "PanGPS.log:43606"
+        },
+        {
+          "timestamp": "2026-07-16 20:58:21.573",
+          "phase": "portal",
+          "event": "State: Retrieving configuration",
+          "source": "PanGPS.log:43718"
+        },
+        {
+          "timestamp": "2026-07-16 20:58:21.610",
+          "phase": "portal",
+          "event": "Existing authentication cookie loaded",
+          "source": "PanGPS.log:43788"
+        },
+        {
+          "timestamp": "2026-07-16 20:58:21.610",
+          "phase": "portal",
+          "event": "Existing authentication cookie loaded",
+          "source": "PanGPS.log:43798"
+        },
+        {
+          "timestamp": "2026-07-16 20:58:21.610",
+          "phase": "portal",
+          "event": "Portal authentication: cas via IDP",
+          "source": "PanGPS.log:43820"
+        },
+        {
+          "timestamp": "2026-07-16 20:58:24.098",
+          "phase": "portal",
+          "event": "Certificate store lookup: machine",
+          "source": "PanGPS.log:44323"
+        },
+        {
+          "timestamp": "2026-07-16 20:58:26.536",
+          "phase": "gateway",
+          "event": "TLS client certificate written",
+          "source": "PanGPS.log:44919"
+        },
+        {
+          "timestamp": "2026-07-16 20:58:26.627",
+          "phase": "gateway",
+          "event": "Server requested a client certificate",
+          "source": "PanGPS.log:44988"
+        },
+        {
+          "timestamp": "2026-07-16 20:58:26.628",
+          "phase": "gateway",
+          "event": "User identity available: local-rich-cross",
+          "source": "PanGPS.log:45004"
+        },
+        {
+          "timestamp": "2026-07-16 20:58:26.629",
+          "phase": "gateway",
+          "event": "Machine identity available: rich-mac",
+          "source": "PanGPS.log:45006"
+        },
+        {
+          "timestamp": "2026-07-16 20:58:26.629",
+          "phase": "gateway",
+          "event": "Matching certificate identities: 1",
+          "source": "PanGPS.log:45032"
+        },
+        {
+          "timestamp": "2026-07-16 20:58:26.629",
+          "phase": "gateway",
+          "event": "Selected certificate identity: rich-mac (machine)",
+          "source": "PanGPS.log:45035"
+        },
+        {
+          "timestamp": "2026-07-16 20:58:28.631",
+          "phase": "gateway",
+          "event": "Authentication issue: msgtype = invalid-gateway-credential",
+          "source": "PanGPS.log:45067"
+        },
+        {
+          "timestamp": "2026-07-16 20:58:36.613",
+          "phase": "gateway",
+          "event": "Existing authentication cookie loaded",
+          "source": "PanGPS.log:45162"
+        },
+        {
+          "timestamp": "2026-07-16 20:58:36.613",
+          "phase": "gateway",
+          "event": "Existing authentication cookie loaded",
+          "source": "PanGPS.log:45186"
+        },
+        {
+          "timestamp": "2026-07-16 20:58:36.613",
+          "phase": "gateway",
+          "event": "Existing authentication cookie loaded",
+          "source": "PanGPS.log:45187"
+        },
+        {
+          "timestamp": "2026-07-16 20:58:36.613",
+          "phase": "gateway",
+          "event": "Gateway authentication: saml via IDP",
+          "source": "PanGPS.log:45189"
+        },
+        {
+          "timestamp": "2026-07-16 20:58:36.655",
+          "phase": "gateway",
+          "event": "Authentication issue: Auth failed empty password for gateway globalprotect.wei-aws-lab.com",
+          "source": "PanGPS.log:45221"
+        },
+        {
+          "timestamp": "2026-07-16 20:58:36.655",
+          "phase": "gateway",
+          "event": "Waiting for SAML authentication response",
+          "source": "PanGPS.log:45223"
+        },
+        {
+          "timestamp": "2026-07-16 20:58:36.656",
+          "phase": "gateway",
+          "event": "Waiting for SAML authentication response",
+          "source": "PanGPS.log:45228"
+        },
+        {
+          "timestamp": "2026-07-16 20:58:36.657",
+          "phase": "gateway",
+          "event": "Existing authentication cookie loaded",
+          "source": "PanGPS.log:45298"
+        },
+        {
+          "timestamp": "2026-07-16 20:58:36.657",
+          "phase": "gateway",
+          "event": "Existing authentication cookie loaded",
+          "source": "PanGPS.log:45308"
+        },
+        {
+          "timestamp": "2026-07-16 20:58:36.657",
+          "phase": "gateway",
+          "event": "Existing authentication cookie loaded",
+          "source": "PanGPS.log:45309"
+        },
+        {
+          "timestamp": "2026-07-16 20:58:36.657",
+          "phase": "gateway",
+          "event": "Gateway authentication: saml via IDP",
+          "source": "PanGPS.log:45311"
+        },
+        {
+          "timestamp": "2026-07-16 20:58:36.716",
+          "phase": "gateway",
+          "event": "State: Connecting",
+          "source": "PanGPS.log:45653"
+        },
+        {
+          "timestamp": "2026-07-16 20:58:36.806",
+          "phase": "gateway",
+          "event": "Tunnel connected to 100.50.81.108",
+          "source": "PanGPS.log:45873"
+        },
+        {
+          "timestamp": "2026-07-16 20:58:36.914",
+          "phase": "gateway",
+          "event": "VPN tunnel connected",
+          "source": "PanGPS.log:46454"
+        },
+        {
+          "timestamp": "2026-07-16 20:58:36.926",
+          "phase": "gateway",
+          "event": "State: Connected",
+          "source": "PanGPS.log:46462"
+        }
+      ],
+      "start_source": "PanGPS.log:38035"
+    }
+  ]
+}
